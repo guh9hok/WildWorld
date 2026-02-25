@@ -33,6 +33,7 @@ The app is a comprehensive animal database with a green theme, featuring 12 anim
   - Changed site-wide font to Times New Roman (via globals.css and layout.tsx)
   - Moved About section to the very top of the home page (above the hero)
   - Replaced static hero gradient with `HeroSlideshow` client component — 8 rotating blurred animal images, crossfade transition every 10 seconds
+  - Scoped Times New Roman font to About section only (removed global font override); all other text uses default system font
 
 ## Current Structure
 

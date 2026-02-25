@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased bg-green-50 min-h-screen" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
+      <body className="antialiased bg-green-50 min-h-screen">
         <Navbar />
         <main>{children}</main>
         <Footer />
