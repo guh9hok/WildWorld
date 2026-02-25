@@ -1,5 +1,15 @@
 import { sqliteTable, text, integer } from "drizzle-orm/sqlite-core";
 
+export const users = sqliteTable("users", {
+  id: integer("id").primaryKey({ autoIncrement: true }),
+  email: text("email").notNull().unique(),
+  name: text("name").notNull(),
+  password: text("password").notNull(),
+  role: text("role").notNull().default("user"), // "user" | "moderator" | "admin"
+  earnings: integer("earnings").notNull().default(0), // Total earnings in cents
+  createdAt: integer("created_at", { mode: "timestamp" }).$defaultFn(() => new Date()),
+});
+
 export const submittedAnimals = sqliteTable("submitted_animals", {
   id: integer("id").primaryKey({ autoIncrement: true }),
   name: text("name").notNull(),
@@ -20,5 +30,6 @@ export const submittedAnimals = sqliteTable("submitted_animals", {
   tags: text("tags").notNull().default("[]"), // JSON array
   status: text("status").notNull().default("pending"), // "pending" | "approved" | "rejected"
   submittedBy: text("submitted_by").notNull().default("Anonymous"),
+  approvedBy: integer("approved_by"), // User ID of moderator who approved
   createdAt: integer("created_at", { mode: "timestamp" }).$defaultFn(() => new Date()),
 });

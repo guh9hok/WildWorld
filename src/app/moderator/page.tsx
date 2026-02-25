@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
-import { isModerator, loginAsModerator, logoutModerator } from "@/lib/moderator";
+import { useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
 interface SubmittedAnimal {
   id: number;
@@ -25,17 +26,12 @@ interface SubmittedAnimal {
 }
 
 export default function ModeratorPage() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [password, setPassword] = useState("");
-  const [loginError, setLoginError] = useState("");
+  const { data: session, status } = useSession();
+  const router = useRouter();
   const [animals, setAnimals] = useState<SubmittedAnimal[]>([]);
   const [loading, setLoading] = useState(false);
   const [actionLoading, setActionLoading] = useState<number | null>(null);
   const [message, setMessage] = useState("");
-
-  useEffect(() => {
-    setIsLoggedIn(isModerator());
-  }, []);
 
   const fetchPending = useCallback(async () => {
     setLoading(true);
@@ -51,27 +47,18 @@ export default function ModeratorPage() {
   }, []);
 
   useEffect(() => {
-    if (isLoggedIn) {
+    if (status === "unauthenticated") {
+      router.push("/auth/signin");
+    } else if (status === "authenticated" && (session?.user as any)?.role !== "moderator" && (session?.user as any)?.role !== "admin") {
+      router.push("/");
+    }
+  }, [status, session, router]);
+
+  useEffect(() => {
+    if (session && ((session.user as any)?.role === "moderator" || (session.user as any)?.role === "admin")) {
       fetchPending();
     }
-  }, [isLoggedIn, fetchPending]);
-
-  const handleLogin = (e: React.FormEvent) => {
-    e.preventDefault();
-    const success = loginAsModerator(password);
-    if (success) {
-      setIsLoggedIn(true);
-      setLoginError("");
-    } else {
-      setLoginError("Incorrect password. Please try again.");
-    }
-  };
-
-  const handleLogout = () => {
-    logoutModerator();
-    setIsLoggedIn(false);
-    setAnimals([]);
-  };
+  }, [session, fetchPending]);
 
   const handleModerate = async (id: number, action: "approve" | "reject") => {
     setActionLoading(id);
@@ -82,9 +69,11 @@ export default function ModeratorPage() {
         body: JSON.stringify({ id, action }),
       });
       if (!res.ok) throw new Error("Failed");
-      setMessage(`Animal ${action === "approve" ? "approved" : "rejected"} successfully.`);
+      
+      const earningsMsg = action === "approve" ? " (+$2 earned!)" : "";
+      setMessage(`Animal ${action === "approve" ? "approved" : "rejected"} successfully.${earningsMsg}`);
       setAnimals((prev) => prev.filter((a) => a.id !== id));
-      setTimeout(() => setMessage(""), 3000);
+      setTimeout(() => setMessage(""), 5000);
     } catch {
       setMessage("Action failed. Please try again.");
     } finally {
@@ -92,66 +81,34 @@ export default function ModeratorPage() {
     }
   };
 
-  if (!isLoggedIn) {
+  if (status === "loading" || !session) {
     return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
-        <div className="bg-white rounded-2xl shadow-xl p-8 w-full max-w-md">
-          <div className="text-center mb-6">
-            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg className="w-8 h-8 text-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-              </svg>
-            </div>
-            <h1 className="text-2xl font-bold text-gray-900">Moderator Login</h1>
-            <p className="text-gray-500 text-sm mt-1">Enter your moderator password to continue</p>
-          </div>
-
-          <form onSubmit={handleLogin} className="space-y-4">
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Password</label>
-              <input
-                type="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                required
-                placeholder="Enter moderator password"
-                className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500"
-              />
-            </div>
-            {loginError && (
-              <p className="text-red-600 text-sm bg-red-50 border border-red-200 rounded-lg p-3">{loginError}</p>
-            )}
-            <button
-              type="submit"
-              className="w-full bg-green-700 text-white font-semibold py-3 rounded-xl hover:bg-green-800 transition-colors"
-            >
-              Login as Moderator
-            </button>
-          </form>
-
-          <p className="text-center text-xs text-gray-400 mt-4">
-            This page is for moderators only. Regular users cannot access this area.
-          </p>
-        </div>
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="text-gray-500">Loading...</div>
       </div>
     );
   }
+
+  const userRole = session?.user?.role;
+  const userEarnings = session?.user?.earnings || 0;
 
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
       <div className="bg-green-700 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex items-center justify-between">
-          <div>
-            <h1 className="text-2xl font-bold">Moderator Dashboard</h1>
-            <p className="text-green-200 text-sm mt-1">Review and approve animal submissions</p>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          <div className="flex items-center justify-between">
+            <div>
+              <h1 className="text-2xl font-bold">Moderator Dashboard</h1>
+              <p className="text-green-200 text-sm mt-1">Review and approve animal submissions</p>
+            </div>
+            <div className="text-right">
+              <p className="text-green-200 text-sm">Welcome, {session.user?.name}</p>
+              {userRole === "moderator" && (
+                <p className="text-xl font-bold mt-1">${(userEarnings / 100).toFixed(2)}</p>
+              )}
+            </div>
           </div>
-          <button
-            onClick={handleLogout}
-            className="bg-green-800 hover:bg-green-900 text-white px-4 py-2 rounded-xl text-sm font-medium transition-colors"
-          >
-            Logout
-          </button>
         </div>
       </div>
 
@@ -207,7 +164,7 @@ export default function ModeratorPage() {
                       <div className="flex-1">
                         <div className="flex items-center gap-2 flex-wrap mb-1">
                           <h3 className="text-lg font-bold text-gray-900">{animal.name}</h3>
-                          <span className="bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded-full">
+                          <span className="bg-green-800 text-xs font-semibold-green-100 text px-2 py-0.5 rounded-full">
                             {animal.category}
                           </span>
                           <span className="bg-amber-100 text-amber-800 text-xs font-semibold px-2 py-0.5 rounded-full">
@@ -284,7 +241,7 @@ export default function ModeratorPage() {
                         <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
-                        {actionLoading === animal.id ? "Processing..." : "Approve"}
+                        {actionLoading === animal.id ? "Processing..." : "Approve (+$2)"}
                       </button>
                       <button
                         onClick={() => handleModerate(animal.id, "reject")}

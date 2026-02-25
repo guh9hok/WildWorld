@@ -8,6 +8,13 @@
       "when": 1772016227237,
       "tag": "0000_lumpy_captain_marvel",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1772031967500,
+      "tag": "0001_new_morbius",
+      "breakpoints": true
     }
   ]
 }
