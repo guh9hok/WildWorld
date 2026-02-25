@@ -26,9 +26,15 @@ export default function Navbar() {
             </Link>
             <Link
               href="/#about"
-              className="bg-green-600 hover:bg-green-500 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors"
+              className="text-green-100 hover:text-white transition-colors text-sm font-medium"
             >
               About
+            </Link>
+            <Link
+              href="/moderator"
+              className="bg-green-600 hover:bg-green-500 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors"
+            >
+              Moderator
             </Link>
           </div>
         </div>

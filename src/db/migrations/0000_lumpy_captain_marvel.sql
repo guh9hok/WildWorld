@@ -1,0 +1,22 @@
+CREATE TABLE `submitted_animals` (
+	`id` integer PRIMARY KEY AUTOINCREMENT NOT NULL,
+	`name` text NOT NULL,
+	`scientific_name` text NOT NULL,
+	`category` text NOT NULL,
+	`description` text NOT NULL,
+	`habitat` text NOT NULL,
+	`diet` text NOT NULL,
+	`lifespan` text NOT NULL,
+	`weight` text NOT NULL,
+	`length` text NOT NULL,
+	`conservation_status` text NOT NULL,
+	`image_url` text NOT NULL,
+	`video_id` text DEFAULT '' NOT NULL,
+	`fun_facts` text DEFAULT '[]' NOT NULL,
+	`locations` text DEFAULT '[]' NOT NULL,
+	`map_region` text NOT NULL,
+	`tags` text DEFAULT '[]' NOT NULL,
+	`status` text DEFAULT 'pending' NOT NULL,
+	`submitted_by` text DEFAULT 'Anonymous' NOT NULL,
+	`created_at` integer
+);
