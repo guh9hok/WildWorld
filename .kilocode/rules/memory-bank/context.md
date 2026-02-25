@@ -28,6 +28,11 @@ The app is a comprehensive animal database with a green theme, featuring 12 anim
   - Woolly Mammoth, Dodo, Saber-Toothed Cat (Extinct Animal)
   - Monarch Butterfly, Atlas Moth, Goliath Beetle (Insect)
   - Total now 18 species across 7 categories
+- [x] **UI polish pass**:
+  - Removed all emojis from Navbar, Footer, and page.tsx
+  - Changed site-wide font to Times New Roman (via globals.css and layout.tsx)
+  - Moved About section to the very top of the home page (above the hero)
+  - Replaced static hero gradient with `HeroSlideshow` client component — 8 rotating blurred animal images, crossfade transition every 10 seconds
 
 ## Current Structure
 
