@@ -3,7 +3,7 @@ import { animals } from "@/lib/animals";
 
 const stats = [
   { label: "Species", value: animals.length.toString(), icon: "🦁" },
-  { label: "Categories", value: "5", icon: "📋" },
+  { label: "Categories", value: "7", icon: "📋" },
   { label: "Endangered", value: animals.filter((a) => a.conservationStatus === "Endangered" || a.conservationStatus === "Critically Endangered").length.toString(), icon: "⚠️" },
   { label: "Continents", value: "7", icon: "🌍" },
 ];
@@ -61,13 +61,15 @@ export default function HomePage() {
       {/* Category Highlights */}
       <section id="categories" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">Browse by Category</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 mb-12">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-4 mb-12">
           {[
             { name: "Mammals", icon: "🦁", color: "bg-amber-50 border-amber-200 text-amber-800 hover:bg-amber-100" },
             { name: "Birds", icon: "🦅", color: "bg-sky-50 border-sky-200 text-sky-800 hover:bg-sky-100" },
             { name: "Fish", icon: "🦈", color: "bg-blue-50 border-blue-200 text-blue-800 hover:bg-blue-100" },
             { name: "Reptiles", icon: "🦎", color: "bg-green-50 border-green-200 text-green-800 hover:bg-green-100" },
             { name: "Amphibians", icon: "🐸", color: "bg-teal-50 border-teal-200 text-teal-800 hover:bg-teal-100" },
+            { name: "Extinct Animals", icon: "🦴", color: "bg-stone-50 border-stone-300 text-stone-800 hover:bg-stone-100" },
+            { name: "Insects", icon: "🦋", color: "bg-blue-50 border-blue-300 text-blue-900 hover:bg-blue-100" },
           ].map((cat) => (
             <div
               key={cat.name}
