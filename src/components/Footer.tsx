@@ -5,7 +5,6 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <span className="text-2xl">🌿</span>
               <span className="text-xl font-bold text-white">WildWorld</span>
             </div>
             <p className="text-green-300 text-sm leading-relaxed">
@@ -46,7 +45,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-green-800 mt-8 pt-8 text-center text-green-400 text-sm">
-          <p>© 2024 WildWorld Animal Database. Built with ❤️ for wildlife conservation.</p>
+          <p>© 2024 WildWorld Animal Database. Built for wildlife conservation.</p>
         </div>
       </div>
     </footer>
