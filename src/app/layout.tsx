@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,8 +15,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Next.js Template",
-  description: "A minimal Next.js starter template",
+  title: "WildWorld — Animal Database",
+  description:
+    "Explore the incredible diversity of animal life on Earth. Discover species, habitats, conservation status, and more.",
+  keywords: ["animals", "wildlife", "nature", "conservation", "species", "database"],
 };
 
 export default function RootLayout({
@@ -25,9 +29,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-green-50 min-h-screen`}
       >
-        {children}
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
