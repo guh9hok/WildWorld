@@ -24,6 +24,10 @@ The app is a comprehensive animal database with a green theme, featuring 12 anim
   - Sticky quick-facts sidebar
   - Related animals section
   - Responsive navbar and footer
+- [x] **New categories added**: "Extinct Animal" (brown theme) and "Insects" (blue theme) with 6 new animals:
+  - Woolly Mammoth, Dodo, Saber-Toothed Cat (Extinct Animal)
+  - Monarch Butterfly, Atlas Moth, Goliath Beetle (Insect)
+  - Total now 18 species across 7 categories
 
 ## Current Structure
 
