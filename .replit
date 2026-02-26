@@ -1,6 +1,57 @@
-modules = ["nodejs-20", "web"]
+modules = ["nodejs-20", "web", "bun", "bun-1.2"]
 [agent]
 expertMode = true
 
 [nix]
 channel = "stable-25_05"
+
+[userenv]
+
+[userenv.shared]
+DB_URL = "http://localhost:3001"
+DB_TOKEN = "local-dev-token"
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Start application"
+
+[[workflows.workflow]]
+name = "Start application"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "bun run dev"
+waitForPort = 5000
+
+[workflows.workflow.metadata]
+outputType = "webview"
+
+[[ports]]
+localPort = 3001
+externalPort = 80
+
+[[ports]]
+localPort = 5000
+externalPort = 5000
+
+[[ports]]
+localPort = 5001
+externalPort = 3001
+
+[[ports]]
+localPort = 5002
+externalPort = 3002
+
+[deployment]
+deploymentTarget = "autoscale"
+run = ["bash", "start-prod.sh"]
+build = ["bash", "-c", "bun run sqlite-server.ts & /nix/store/1lagpgadaybvs1n2312gysg2phjk89y8-nodejs-20.20.0-wrapped/bin/node node_modules/.bin/next build"]

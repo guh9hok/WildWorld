@@ -15,6 +15,13 @@
       "when": 1772031967500,
       "tag": "0001_new_morbius",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1772113302881,
+      "tag": "0002_mysterious_bastion",
+      "breakpoints": true
     }
   ]
 }
