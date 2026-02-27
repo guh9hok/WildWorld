@@ -1,17 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useSession, signOut } from "next-auth/react";
 
 export default function Navbar() {
-  const { data: session, status } = useSession();
-
-  const handleSignOut = async () => {
-    await signOut({ callbackUrl: "/" });
-  };
-
-  const userRole = session?.user?.role;
-
   return (
     <nav className="bg-green-800 text-white shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
