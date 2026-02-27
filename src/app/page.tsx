@@ -1,5 +1,6 @@
 import AnimalSearch from "@/components/AnimalSearch";
 import HeroSlideshow from "@/components/HeroSlideshow";
+import Quiz from "@/components/Quiz";
 import { animals } from "@/lib/animals";
 
 const stats = [
@@ -52,10 +53,10 @@ export default function HomePage() {
                   Explore Animals
                 </a>
                 <a
-                  href="#categories"
-                  className="border-2 border-white text-white font-semibold px-6 py-3 rounded-full hover:bg-white hover:text-green-800 transition-colors"
+                  href="#quiz"
+                  className="bg-green-600 text-white font-semibold px-6 py-3 rounded-full hover:bg-green-500 transition-colors shadow-lg"
                 >
-                  Browse Categories
+                  Take Biology Quiz
                 </a>
               </div>
             </div>
@@ -76,6 +77,17 @@ export default function HomePage() {
           </div>
         </section>
       </HeroSlideshow>
+
+      {/* Quiz Section */}
+      <section id="quiz" className="bg-green-50 py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Test Your Knowledge</h2>
+            <p className="text-gray-600">Challenge yourself with our biology quiz and learn more about the animal kingdom.</p>
+          </div>
+          <Quiz />
+        </div>
+      </section>
 
       {/* Category Highlights */}
       <section id="categories" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

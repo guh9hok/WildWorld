@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import SessionProvider from "@/components/SessionProvider";
 
 export const metadata: Metadata = {
   title: "WildWorld — Animal Database",
@@ -19,11 +18,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased bg-green-50 min-h-screen">
-        <SessionProvider>
-          <Navbar />
-          <main>{children}</main>
-          <Footer />
-        </SessionProvider>
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
