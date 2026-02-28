@@ -37,6 +37,19 @@ export default function Quiz() {
   const [score, setScore] = useState(0);
   const [showResult, setShowResult] = useState(false);
   const [feedback, setFeedback] = useState<{ isCorrect: boolean; message: string } | null>(null);
+  const [isFullScreen, setIsFullScreen] = useState(false);
+
+  const toggleFullScreen = () => {
+    if (!document.fullscreenElement) {
+      document.documentElement.requestFullscreen().catch((err) => {
+        console.error(`Error attempting to enable full-screen mode: ${err.message}`);
+      });
+      setIsFullScreen(true);
+    } else {
+      document.exitFullscreen();
+      setIsFullScreen(false);
+    }
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -72,14 +85,27 @@ export default function Quiz() {
   };
 
   return (
-    <div className="bg-white rounded-2xl shadow-xl p-8 max-w-2xl mx-auto border border-green-100">
+    <div className={`bg-white rounded-2xl shadow-xl p-8 max-w-2xl mx-auto border border-green-100 transition-all ${isFullScreen ? 'fixed inset-0 z-[100] max-w-none rounded-none flex flex-col justify-center' : ''}`}>
       {!showResult ? (
-        <div>
+        <div className={isFullScreen ? 'max-w-2xl mx-auto w-full' : ''}>
           <div className="flex justify-between items-center mb-6">
             <h2 className="text-2xl font-bold text-green-800">Biology Quiz</h2>
-            <span className="text-sm font-medium text-green-600 bg-green-50 px-3 py-1 rounded-full">
-              Question {currentQuestion + 1} of {quizQuestions.length}
-            </span>
+            <div className="flex items-center gap-3">
+              <button
+                onClick={toggleFullScreen}
+                className="text-green-600 hover:text-green-800 p-2 rounded-full hover:bg-green-50 transition-colors"
+                title={isFullScreen ? "Exit Fullscreen" : "Enter Fullscreen"}
+              >
+                {isFullScreen ? (
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"/></svg>
+                ) : (
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+                )}
+              </button>
+              <span className="text-sm font-medium text-green-600 bg-green-50 px-3 py-1 rounded-full">
+                Question {currentQuestion + 1} of {quizQuestions.length}
+              </span>
+            </div>
           </div>
           <p className="text-xl text-gray-800 mb-8 font-medium">
             {quizQuestions[currentQuestion].question}
@@ -111,19 +137,29 @@ export default function Quiz() {
           )}
         </div>
       ) : (
-        <div className="text-center py-8">
+        <div className={`text-center py-8 ${isFullScreen ? 'max-w-2xl mx-auto w-full' : ''}`}>
           <div className="text-6xl mb-4">🏆</div>
           <h2 className="text-3xl font-bold text-green-800 mb-4">Quiz Completed!</h2>
           <p className="text-xl text-gray-600 mb-8">
             You scored <span className="text-green-600 font-bold">{score}</span> out of{" "}
             <span className="text-green-600 font-bold">{quizQuestions.length}</span>
           </p>
-          <button
-            onClick={resetQuiz}
-            className="bg-green-700 hover:bg-green-800 text-white font-bold py-3 px-8 rounded-full transition-colors shadow-lg"
-          >
-            Try Again
-          </button>
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <button
+              onClick={resetQuiz}
+              className="bg-green-700 hover:bg-green-800 text-white font-bold py-3 px-8 rounded-full transition-colors shadow-lg"
+            >
+              Try Again
+            </button>
+            {isFullScreen && (
+              <button
+                onClick={toggleFullScreen}
+                className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-3 px-8 rounded-full transition-colors shadow-lg"
+              >
+                Exit Fullscreen
+              </button>
+            )}
+          </div>
         </div>
       )}
     </div>
