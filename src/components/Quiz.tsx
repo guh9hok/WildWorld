@@ -22,7 +22,13 @@ const quizQuestions = [
   { question: "Which animal has a hard shell and moves very slowly?", answer: "Turtle" },
   { question: "Which big cat has black stripes on its orange fur?", answer: "Tiger" },
   { question: "Which insect is famous for making honey?", answer: "Bee" },
-  { question: "What do you call an animal that can live both in water and on land?", answer: "Amphibian" },
+  { question: "What is the name of the 'water bear' known for surviving extreme conditions?", answer: "Tardigrade" },
+  { question: "What is the basic structural and functional unit of all living organisms?", answer: "Cell" },
+  { question: "What do you call an organism made of only one cell?", answer: "Unicellular" },
+  { question: "Which organelle is known as the powerhouse of the cell?", answer: "Mitochondria" },
+  { question: "What is the process by which plants make their own food?", answer: "Photosynthesis" },
+  { question: "What type of microorganism is used to make bread rise?", answer: "Yeast" },
+  { question: "What do you call an organism that can only be seen with a microscope?", answer: "Microorganism" },
 ];
 
 export default function Quiz() {
