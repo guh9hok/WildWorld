@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: PageProps) {
   const animal = animals.find((a) => a.id === id);
   if (!animal) return { title: "Animal Not Found" };
   return {
-    title: `${animal.name} — WildWorld`,
+    title: `${animal.name} — Creature Codex`,
     description: animal.description.slice(0, 160),
   };
 }

@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <span className="text-xl font-bold text-white">WildWorld</span>
+              <span className="text-xl font-bold text-white">Creature Codex</span>
             </div>
             <p className="text-green-300 text-sm leading-relaxed">
               A comprehensive database of animals from around the world. Explore species, learn about
@@ -34,9 +34,9 @@ export default function Footer() {
             </ul>
           </div>
           <div id="about">
-            <h3 className="text-white font-semibold mb-4">About WildWorld</h3>
+            <h3 className="text-white font-semibold mb-4">About Creature Codex</h3>
             <p className="text-green-300 text-sm leading-relaxed">
-              WildWorld is dedicated to educating people about the incredible animals that share our
+              Creature Codex is dedicated to educating people about the incredible animals that share our
               planet. Our mission is to inspire conservation through knowledge and wonder.
             </p>
             <p className="text-green-400 text-xs mt-4">
@@ -45,7 +45,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-green-800 mt-8 pt-8 text-center text-green-400 text-sm">
-          <p>© 2024 WildWorld Animal Database. Built for wildlife conservation.</p>
+          <p>© 2024 Creature Codex Animal Database. Built for wildlife conservation.</p>
         </div>
       </div>
     </footer>

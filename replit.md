@@ -1,4 +1,4 @@
-# WildWorld — Animal Encyclopedia
+# Creature Codex — Animal Encyclopedia
 
 An educational animal encyclopedia and conservation platform built with Next.js 15, featuring a comprehensive database of animal species.
 

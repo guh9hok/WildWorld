@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "WildWorld — Animal Database",
+  title: "Creature Codex — Animal Database",
   description:
     "Explore the incredible diversity of animal life on Earth. Discover species, habitats, conservation status, and more.",
   keywords: ["animals", "wildlife", "nature", "conservation", "species", "database"],

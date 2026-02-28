@@ -17,9 +17,9 @@ export default function HomePage() {
       <section id="about" className="bg-green-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
           <div className="max-w-3xl mx-auto text-center" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
-            <h2 className="text-2xl font-bold mb-3 text-white">About WildWorld</h2>
+            <h2 className="text-2xl font-bold mb-3 text-white">About Creature Codex</h2>
             <p className="text-green-200 leading-relaxed">
-              WildWorld is dedicated to educating people about the incredible animals that share our
+              Creature Codex is dedicated to educating people about the incredible animals that share our
               planet. Our mission is to inspire conservation through knowledge and wonder. Explore
               species from every corner of the globe — learn about their habitats, behaviours,
               conservation status, and the remarkable stories that make each one unique.

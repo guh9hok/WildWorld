@@ -9,7 +9,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-3 hover:opacity-90 transition-opacity">
             <div>
-              <span className="text-xl font-bold tracking-tight">WildWorld</span>
+              <span className="text-xl font-bold tracking-tight">Creature Codex</span>
               <span className="hidden sm:block text-xs text-green-300 -mt-1">Animal Database</span>
             </div>
           </Link>
