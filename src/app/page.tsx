@@ -5,7 +5,7 @@ import { animals } from "@/lib/animals";
 
 const stats = [
   { label: "Species", value: animals.length.toString() },
-  { label: "Categories", value: "7" },
+  { label: "Categories", value: "8" },
   { label: "Endangered", value: animals.filter((a) => a.conservationStatus === "Endangered" || a.conservationStatus === "Critically Endangered").length.toString() },
   { label: "Continents", value: "7" },
 ];
@@ -92,7 +92,7 @@ export default function HomePage() {
       {/* Category Highlights */}
       <section id="categories" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">Browse by Category</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-4 mb-12">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-4 mb-12">
           {[
             { name: "Mammals", color: "bg-amber-50 border-amber-200 text-amber-800 hover:bg-amber-100" },
             { name: "Birds", color: "bg-sky-50 border-sky-200 text-sky-800 hover:bg-sky-100" },
@@ -101,6 +101,7 @@ export default function HomePage() {
             { name: "Amphibians", color: "bg-teal-50 border-teal-200 text-teal-800 hover:bg-teal-100" },
             { name: "Extinct Animals", color: "bg-stone-50 border-stone-300 text-stone-800 hover:bg-stone-100" },
             { name: "Insects", color: "bg-blue-50 border-blue-300 text-blue-900 hover:bg-blue-100" },
+            { name: "Microorganisms", color: "bg-purple-50 border-purple-200 text-purple-800 hover:bg-purple-100" },
           ].map((cat) => (
             <div
               key={cat.name}

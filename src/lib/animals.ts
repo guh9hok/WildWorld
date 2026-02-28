@@ -3417,9 +3417,36 @@ export const animals: Animal[] = [
     mapRegion: "Central & South America",
     tags: ["insect", "ant", "farmer", "social"],
   },
+  {
+    id: "tardigrade",
+    name: "Tardigrade",
+    scientificName: "Milnesium tardigradum",
+    category: "Microorganism",
+    description:
+      "Tardigrades, also known as water bears or moss piglets, are near-microscopic eight-legged segmented animals. They are among the most resilient animals known, capable of surviving extreme conditions that would be quickly fatal to nearly all other known life forms, such as exposure to extreme temperatures, extreme pressures, air deprivation, radiation, and even the vacuum of outer space.",
+    habitat: "Found in diverse environments including marine, freshwater, and terrestrial habitats like moss and lichen.",
+    diet: "Omnivore — fluids from plant and animal cells, or smaller microorganisms.",
+    lifespan: "Up to 30 years (not including cryptobiosis)",
+    weight: "Extremely light",
+    length: "0.5 mm",
+    conservationStatus: "Least Concern",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Tardigrade_scanning_electron_micrograph_2.jpg/1280px-Tardigrade_scanning_electron_micrograph_2.jpg",
+    videoId: "7W194GQ6fHI",
+    funFacts: [
+      "They can survive for up to 30 years without food or water.",
+      "Tardigrades have been sent to outer space and survived.",
+      "When they dry out, they enter a state called cryptobiosis where their metabolism slows to 0.01% of normal.",
+      "They are found from the highest mountains to the deepest oceans.",
+    ],
+    locations: [
+      { name: "Global Distribution", lat: 0, lng: 0 },
+    ],
+    mapRegion: "Global",
+    tags: ["microscopic", "resilient", "extremophile"],
+  },
 ];
 
-export const categories = ["All", "Mammal", "Bird", "Fish", "Reptile", "Amphibian", "Extinct Animal", "Insect"];
+export const categories = ["All", "Mammal", "Bird", "Fish", "Reptile", "Amphibian", "Extinct Animal", "Insect", "Microorganism"];
 
 export const conservationColors: Record<Animal["conservationStatus"], string> = {
   "Least Concern": "bg-green-100 text-green-800",
