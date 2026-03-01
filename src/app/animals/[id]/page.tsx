@@ -15,7 +15,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: PageProps) {
   const { id } = await params;
   const animal = animals.find((a) => a.id === id);
-  if (!animal) return { title: "Animal Not Found" };
+  if (!animal) return { title: "Creature Not Found" };
   return {
     title: `${animal.name} — Creature Codex`,
     description: animal.description.slice(0, 160),
@@ -39,8 +39,17 @@ export default async function AnimalPage({ params }: PageProps) {
     { label: "Diet", value: animal.diet, icon: "🍃" },
     { label: "Lifespan", value: animal.lifespan, icon: "⏳" },
     { label: "Weight", value: animal.weight, icon: "⚖️" },
-    { label: "Length", value: animal.length, icon: "📏" },
+    { label: "Size/Height", value: animal.length, icon: "📏" },
     { label: "Region", value: animal.mapRegion, icon: "🌍" },
+  ];
+
+  const taxonomyItems = [
+    { label: "Kingdom", value: animal.taxonomy?.kingdom },
+    { label: "Phylum", value: animal.taxonomy?.phylum },
+    { label: "Class", value: animal.taxonomy?.class },
+    { label: "Order", value: animal.taxonomy?.order },
+    { label: "Family", value: animal.taxonomy?.family },
+    { label: "Genus", value: animal.taxonomy?.genus },
   ];
 
   return (
@@ -97,7 +106,28 @@ export default async function AnimalPage({ params }: PageProps) {
             <h2 className="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
               <span>📖</span> About
             </h2>
-            <p className="text-gray-700 leading-relaxed text-base">{animal.description}</p>
+            <p className="text-gray-700 leading-relaxed text-base mb-4">{animal.description}</p>
+            {animal.behavior && (
+              <div className="mt-4 p-4 bg-green-50 rounded-xl border border-green-100">
+                <h3 className="text-sm font-bold text-green-800 uppercase tracking-wide mb-2">Behavior</h3>
+                <p className="text-gray-700">{animal.behavior}</p>
+              </div>
+            )}
+          </div>
+
+          {/* Taxonomy Section */}
+          <div className="bg-white rounded-2xl p-6 shadow-md border border-green-100">
+            <h2 className="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+              <span>🧬</span> Biological Classification
+            </h2>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+              {taxonomyItems.map((item) => (
+                <div key={item.label} className="p-3 bg-gray-50 rounded-xl border border-gray-100">
+                  <p className="text-xs text-gray-400 font-medium uppercase tracking-wide">{item.label}</p>
+                  <p className="text-sm text-gray-800 font-bold">{item.value || "N/A"}</p>
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* Video */}
