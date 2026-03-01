@@ -3,6 +3,7 @@ export interface Animal {
   name: string;
   scientificName: string;
   category: string;
+  subcategory?: string;
   description: string;
   habitat: string;
   diet: string;
@@ -1172,6 +1173,7 @@ export const animals: Animal[] = [
     name: "Emperor Penguin",
     scientificName: "Aptenodytes forsteri",
     category: "Bird",
+    subcategory: "Flightless Bird",
     description:
       "The emperor penguin is the tallest and heaviest of all penguin species and is endemic to Antarctica. These remarkable birds endure the harshest conditions on Earth to breed during the Antarctic winter. Males incubate eggs on their feet for two months in temperatures as low as -60°C.",
     habitat: "Antarctic sea ice and surrounding waters",
@@ -1201,6 +1203,7 @@ export const animals: Animal[] = [
     name: "Golden Eagle",
     scientificName: "Aquila chrysaetos",
     category: "Bird",
+    subcategory: "Flying Bird",
     description:
       "The golden eagle is one of the most widely distributed and revered birds of prey in the Northern Hemisphere. With a wingspan of up to 2.3 metres and eyesight 4–8 times more powerful than a human's, they are supreme aerial hunters.",
     habitat: "Mountains, hills, cliffs, and open country across the Northern Hemisphere",
@@ -1261,6 +1264,7 @@ export const animals: Animal[] = [
     name: "Bald Eagle",
     scientificName: "Haliaeetus leucocephalus",
     category: "Bird",
+    subcategory: "Flying Bird",
     description:
       "The bald eagle is the national bird and symbol of the United States. It is a large bird of prey found near large open water bodies with abundant food supply and old-growth trees for nesting. Once nearly extinct due to hunting and pesticide use, it has made a remarkable recovery.",
     habitat: "Near large bodies of open water with abundant food supply across North America",
@@ -1493,6 +1497,7 @@ export const animals: Animal[] = [
     name: "Brown Kiwi",
     scientificName: "Apteryx mantelli",
     category: "Bird",
+    subcategory: "Flightless Bird",
     description:
       "The brown kiwi is a flightless bird endemic to New Zealand and the national symbol of the country. It is the smallest ratite and is unique among birds for having nostrils at the tip of its long bill, which it uses to probe the ground for food. Kiwis are nocturnal and have a highly developed sense of smell.",
     habitat: "Forests, scrublands, and grasslands of New Zealand",

@@ -35,6 +35,7 @@ export default async function AnimalPage({ params }: PageProps) {
   const infoItems = [
     { label: "Scientific Name", value: animal.scientificName, icon: "🔬" },
     { label: "Category", value: animal.category, icon: "📋" },
+    { label: "Subcategory", value: animal.subcategory || "N/A", icon: "📁" },
     { label: "Habitat", value: animal.habitat, icon: "🌿" },
     { label: "Diet", value: animal.diet, icon: "🍃" },
     { label: "Lifespan", value: animal.lifespan, icon: "⏳" },

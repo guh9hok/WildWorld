@@ -7,6 +7,22 @@ import AnimalCard from "./AnimalCard";
 export default function AnimalSearch() {
   const [search, setSearch] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedSubcategory, setSelectedSubcategory] = useState("All");
+
+  const subcategories = useMemo(() => {
+    if (selectedCategory === "All") return [];
+    const subs = new Set<string>();
+    staticAnimals.forEach(animal => {
+      if (animal.category === selectedCategory && animal.subcategory) {
+        subs.add(animal.subcategory);
+      }
+    });
+    return Array.from(subs);
+  }, [selectedCategory]);
+
+  useEffect(() => {
+    setSelectedSubcategory("All");
+  }, [selectedCategory]);
 
   const filtered = useMemo(() => {
     return staticAnimals.filter((animal) => {
@@ -21,9 +37,12 @@ export default function AnimalSearch() {
       const matchesCategory =
         selectedCategory === "All" || animal.category === selectedCategory;
 
-      return matchesSearch && matchesCategory;
+      const matchesSubcategory =
+        selectedSubcategory === "All" || animal.subcategory === selectedSubcategory;
+
+      return matchesSearch && matchesCategory && matchesSubcategory;
     });
-  }, [search, selectedCategory]);
+  }, [search, selectedCategory, selectedSubcategory]);
 
   return (
     <div>
@@ -68,6 +87,37 @@ export default function AnimalSearch() {
             ))}
           </div>
         </div>
+
+        {subcategories.length > 0 && (
+          <div className="mt-4 pt-4 border-t border-green-50">
+            <p className="text-xs text-gray-400 font-medium uppercase tracking-wide mb-2">Subcategories</p>
+            <div className="flex gap-2 flex-wrap">
+              <button
+                onClick={() => setSelectedSubcategory("All")}
+                className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
+                  selectedSubcategory === "All"
+                    ? "bg-green-600 text-white shadow-sm"
+                    : "bg-white text-green-600 hover:bg-green-50 border border-green-100"
+                }`}
+              >
+                All {selectedCategory}s
+              </button>
+              {subcategories.map((sub) => (
+                <button
+                  key={sub}
+                  onClick={() => setSelectedSubcategory(sub)}
+                  className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
+                    selectedSubcategory === sub
+                      ? "bg-green-600 text-white shadow-sm"
+                      : "bg-white text-green-600 hover:bg-green-50 border border-green-100"
+                  }`}
+                >
+                  {sub}
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Results Count */}
@@ -83,11 +133,12 @@ export default function AnimalSearch() {
             </span>
           )}
         </p>
-        {(search || selectedCategory !== "All") && (
+        {(search || selectedCategory !== "All" || selectedSubcategory !== "All") && (
           <button
             onClick={() => {
               setSearch("");
               setSelectedCategory("All");
+              setSelectedSubcategory("All");
             }}
             className="text-sm text-green-600 hover:text-green-800 underline"
           >
