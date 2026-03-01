@@ -3444,6 +3444,84 @@ export const animals: Animal[] = [
     mapRegion: "Global",
     tags: ["microscopic", "resilient", "extremophile"],
   },
+  {
+    id: "paramecium",
+    name: "Paramecium",
+    scientificName: "Paramecium caudatum",
+    category: "Microorganism",
+    description: "Paramecium is a genus of unicellular ciliated protozoa, common in freshwater, brackish, and marine environments and are often very abundant in stagnant basins and ponds.",
+    habitat: "Freshwater, brackish, and marine environments",
+    diet: "Bacteria, algae, and yeast",
+    lifespan: "Few days",
+    weight: "Negligible",
+    length: "50–330 μm",
+    conservationStatus: "Least Concern",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Paramecium_caudatum_-_400x_%2814881958641%29.jpg/1280px-Paramecium_caudatum_-_400x_%2814881958641%29.jpg",
+    videoId: "m9LpI26I8oY",
+    funFacts: [
+      "They are covered in thousands of tiny hairs called cilia.",
+      "They move in a spiral motion through the water.",
+      "They have two types of nuclei: a large macronucleus and a small micronucleus.",
+      "They can reproduce both sexually and asexually."
+    ],
+    locations: [
+      { name: "Global Freshwater", lat: 0, lng: 0 }
+    ],
+    mapRegion: "Global",
+    tags: ["unicellular", "ciliate", "freshwater"],
+  },
+  {
+    id: "amoeba",
+    name: "Amoeba",
+    scientificName: "Amoeba proteus",
+    category: "Microorganism",
+    description: "Amoebae are unicellular organisms characterized by their ability to change shape by extending and retracting pseudopods ('false feet').",
+    habitat: "Freshwater ponds, lakes, and slow-moving streams",
+    diet: "Bacteria, algae, and other protists",
+    lifespan: "Few days to weeks",
+    weight: "Negligible",
+    length: "220–740 μm",
+    conservationStatus: "Least Concern",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Amoeba_proteus.jpg/1280px-Amoeba_proteus.jpg",
+    videoId: "7PR37igM9_w",
+    funFacts: [
+      "They use 'false feet' (pseudopodia) to move and capture food.",
+      "They eat by engulfing their prey, a process called phagocytosis.",
+      "If an amoeba is cut in half, the half with the nucleus will survive.",
+      "They reproduce by dividing into two identical cells."
+    ],
+    locations: [
+      { name: "Global Freshwater", lat: 0, lng: 0 }
+    ],
+    mapRegion: "Global",
+    tags: ["unicellular", "protist", "flexible"],
+  },
+  {
+    id: "euglena",
+    name: "Euglena",
+    scientificName: "Euglena gracilis",
+    category: "Microorganism",
+    description: "Euglena is a genus of single-celled flagellated microorganisms that exhibit both plant-like and animal-like characteristics.",
+    habitat: "Freshwater and salt water, often in ponds with high organic matter",
+    diet: "Mixotroph — photosynthesis and consuming organic matter",
+    lifespan: "Few days",
+    weight: "Negligible",
+    length: "15–500 μm",
+    conservationStatus: "Least Concern",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Euglena_sp.JPG/1280px-Euglena_sp.JPG",
+    videoId: "0rNI8U_79S8",
+    funFacts: [
+      "They have a red 'eyespot' that helps them find light for photosynthesis.",
+      "They use a whip-like tail called a flagellum to swim.",
+      "They can live as plants (autotrophs) or animals (heterotrophs).",
+      "They lack a cell wall and instead have a flexible protein layer called a pellicle."
+    ],
+    locations: [
+      { name: "Global Freshwater", lat: 0, lng: 0 }
+    ],
+    mapRegion: "Global",
+    tags: ["algae", "silica", "phytoplankton"],
+  },
 ];
 
 export const categories = ["All", "Mammal", "Bird", "Fish", "Reptile", "Amphibian", "Extinct Animal", "Insect", "Microorganism"];
