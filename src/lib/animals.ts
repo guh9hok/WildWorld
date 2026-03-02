@@ -213,7 +213,7 @@ export const animals: Animal[] = [
     name: "Blue Whale",
     scientificName: "Balaenoptera musculus",
     category: "Mammal",
-    subcategory: "Land Mammal",
+    subcategory: "Marine Mammal",
     description:
       "The blue whale is the largest animal ever known to have existed on Earth. These ocean giants can reach lengths of up to 30 metres and weigh as much as 200 tonnes. Despite their enormous size, they feed almost exclusively on tiny shrimp-like creatures called krill, consuming up to 4 tonnes per day during feeding season.",
     habitat: "Open oceans worldwide, preferring deep offshore waters",
@@ -253,7 +253,7 @@ export const animals: Animal[] = [
     name: "Snow Leopard",
     scientificName: "Panthera uncia",
     category: "Mammal",
-    subcategory: "Land Mammal",
+    subcategory: "Big Cat",
     description:
       "The snow leopard is one of the world's most elusive big cats, perfectly adapted to life in the cold, rugged mountains of Central Asia. Their thick, spotted fur provides camouflage and insulation, while their large paws act as natural snowshoes. They are known as the 'ghost of the mountains' due to their secretive nature.",
     habitat: "Mountain ranges of Central Asia, including the Himalayas and Tibetan Plateau",
@@ -293,7 +293,7 @@ export const animals: Animal[] = [
     name: "Giant Panda",
     scientificName: "Ailuropoda melanoleuca",
     category: "Mammal",
-    subcategory: "Land Mammal",
+    subcategory: "Bear",
     description:
       "The giant panda is one of the world's most beloved and recognisable animals, known for its distinctive black and white colouring. Native to the mountain forests of central China, pandas spend up to 16 hours a day eating bamboo. Conservation efforts have helped bring this species back from the brink of extinction.",
     habitat: "Temperate broadleaf and mixed forests in the mountains of central China",
@@ -332,7 +332,7 @@ export const animals: Animal[] = [
     name: "Arctic Wolf",
     scientificName: "Canis lupus arctos",
     category: "Mammal",
-    subcategory: "Land Mammal",
+    subcategory: "Canid",
     description:
       "The Arctic wolf is a subspecies of grey wolf that has adapted to survive in one of the harshest environments on Earth. Their thick white fur provides both insulation and camouflage in the snow. Unlike other wolf subspecies, Arctic wolves are not threatened by hunting or habitat loss due to their remote habitat.",
     habitat: "Arctic tundra of North America and Greenland",
@@ -371,7 +371,7 @@ export const animals: Animal[] = [
     name: "Humpback Whale",
     scientificName: "Megaptera novaeangliae",
     category: "Mammal",
-    subcategory: "Land Mammal",
+    subcategory: "Marine Mammal",
     description:
       "Humpback whales are famous for their spectacular acrobatic displays and complex, haunting songs. These ocean giants migrate up to 25,000 kilometres each year between their feeding grounds in polar waters and their breeding grounds in tropical seas.",
     habitat: "All major oceans, from polar to tropical waters",
@@ -411,7 +411,7 @@ export const animals: Animal[] = [
     name: "Bengal Tiger",
     scientificName: "Panthera tigris tigris",
     category: "Mammal",
-    subcategory: "Land Mammal",
+    subcategory: "Big Cat",
     description:
       "The Bengal tiger is the most numerous tiger subspecies and is found primarily in India. These powerful predators are solitary hunters that use their distinctive orange and black striped coats as camouflage in tall grasses and forests. Each tiger's stripe pattern is unique, like a human fingerprint.",
     habitat: "Tropical and subtropical moist broadleaf forests, grasslands, and mangroves",
@@ -451,7 +451,7 @@ export const animals: Animal[] = [
     name: "African Lion",
     scientificName: "Panthera leo",
     category: "Mammal",
-    subcategory: "Land Mammal",
+    subcategory: "Big Cat",
     description:
       "The African lion is the second-largest big cat and the only truly social cat species, living in groups called prides. Males are distinguished by their impressive manes, which signal health and dominance. Lions are apex predators that play a crucial role in maintaining the balance of their ecosystems.",
     habitat: "Savannas, grasslands, and open woodlands of sub-Saharan Africa",
@@ -491,7 +491,7 @@ export const animals: Animal[] = [
     name: "Cheetah",
     scientificName: "Acinonyx jubatus",
     category: "Mammal",
-    subcategory: "Land Mammal",
+    subcategory: "Big Cat",
     description:
       "The cheetah is the fastest land animal on Earth, capable of reaching speeds of up to 120 km/h in short bursts. Unlike other big cats, cheetahs cannot roar but can purr. They are slender, built for speed with a flexible spine, long legs, and a deep chest for maximum oxygen intake.",
     habitat: "Open grasslands, savannas, and semi-arid areas of Africa and Iran",
@@ -531,7 +531,7 @@ export const animals: Animal[] = [
     name: "Mountain Gorilla",
     scientificName: "Gorilla beringei beringei",
     category: "Mammal",
-    subcategory: "Land Mammal",
+    subcategory: "Primate",
     description:
       "Mountain gorillas are the largest living primates and one of our closest relatives, sharing about 98% of their DNA with humans. They live in family groups led by a dominant silverback male. Despite their fearsome appearance, they are gentle herbivores that spend most of their time foraging and resting.",
     habitat: "Montane forests of the Virunga Mountains and Bwindi Impenetrable Forest",
@@ -570,7 +570,7 @@ export const animals: Animal[] = [
     name: "Polar Bear",
     scientificName: "Ursus maritimus",
     category: "Mammal",
-    subcategory: "Land Mammal",
+    subcategory: "Marine Mammal",
     description:
       "The polar bear is the world's largest land carnivore and is perfectly adapted to life in the Arctic. Their white fur provides camouflage in the snow, while a thick layer of fat insulates them from the cold. They are classified as marine mammals because they spend most of their lives on sea ice.",
     habitat: "Arctic sea ice, coastal areas, and open water",
@@ -610,7 +610,7 @@ export const animals: Animal[] = [
     name: "Bornean Orangutan",
     scientificName: "Pongo pygmaeus",
     category: "Mammal",
-    subcategory: "Land Mammal",
+    subcategory: "Primate",
     description:
       "Orangutans are the world's largest arboreal mammals and the most intelligent non-human primates. They are highly solitary and spend most of their lives in the forest canopy. Their name means 'person of the forest' in Malay. They are critically endangered due to deforestation and the palm oil industry.",
     habitat: "Tropical and subtropical moist broadleaf forests of Borneo",
@@ -648,7 +648,7 @@ export const animals: Animal[] = [
     name: "African Wild Dog",
     scientificName: "Lycaon pictus",
     category: "Mammal",
-    subcategory: "Land Mammal",
+    subcategory: "Canid",
     description:
       "The African wild dog is one of the world's most endangered carnivores and Africa's most efficient predator, with a hunting success rate of up to 80%. They live in highly cooperative packs and are known for their unique mottled coat patterns, which are different on every individual.",
     habitat: "Open savannas, grasslands, and lightly wooded areas of sub-Saharan Africa",
@@ -687,7 +687,7 @@ export const animals: Animal[] = [
     name: "Narwhal",
     scientificName: "Monodon monoceros",
     category: "Mammal",
-    subcategory: "Land Mammal",
+    subcategory: "Marine Mammal",
     description:
       "The narwhal is a medium-sized toothed whale known for its long, spiral tusk, which is actually an elongated upper left canine tooth. Often called the 'unicorn of the sea', narwhals live year-round in the Arctic waters around Greenland, Canada, and Russia. Their tusks can grow up to 3 metres long.",
     habitat: "Arctic waters of Canada, Greenland, Norway, and Russia",
@@ -726,7 +726,7 @@ export const animals: Animal[] = [
     name: "Jaguar",
     scientificName: "Panthera onca",
     category: "Mammal",
-    subcategory: "Land Mammal",
+    subcategory: "Big Cat",
     description:
       "The jaguar is the largest cat in the Americas and the third-largest in the world. Unlike other big cats, jaguars love water and are strong swimmers. They have the most powerful bite of any big cat relative to their size, capable of piercing turtle shells and crocodile skulls.",
     habitat: "Tropical rainforests, wetlands, and grasslands of Central and South America",
@@ -856,7 +856,7 @@ export const animals: Animal[] = [
     name: "Platypus",
     scientificName: "Ornithorhynchus anatinus",
     category: "Mammal",
-    subcategory: "Land Mammal",
+    subcategory: "Monotreme",
     description:
       "The platypus is one of the most unusual mammals on Earth — a semi-aquatic egg-laying mammal with a duck-like bill, beaver-like tail, and otter-like feet. Males have venomous spurs on their hind legs. When first described to European scientists, many thought it was a hoax.",
     habitat: "Freshwater rivers, streams, and lakes of eastern Australia and Tasmania",
@@ -947,7 +947,7 @@ export const animals: Animal[] = [
     name: "Giant Manta Ray",
     scientificName: "Mobula birostris",
     category: "Mammal",
-    subcategory: "Land Mammal",
+    subcategory: "Ray",
     description:
       "The giant manta ray is the world's largest ray, with a wingspan that can reach up to 7 metres. Despite their enormous size, they are filter feeders, consuming tiny plankton and small fish. They are known for their acrobatic leaps out of the water and their curious, gentle nature around divers.",
     habitat: "Tropical and subtropical oceans worldwide, often near coral reefs and productive coastlines",
@@ -977,7 +977,7 @@ export const animals: Animal[] = [
     name: "Orca (Killer Whale)",
     scientificName: "Orcinus orca",
     category: "Mammal",
-    subcategory: "Land Mammal",
+    subcategory: "Marine Mammal",
     description:
       "The orca, or killer whale, is the largest member of the dolphin family and one of the ocean's most powerful predators. They are highly intelligent, social animals that live in complex family groups called pods. Different populations have distinct cultures, dialects, and hunting techniques passed down through generations.",
     habitat: "All oceans, from Arctic and Antarctic regions to tropical seas",
@@ -1008,7 +1008,7 @@ export const animals: Animal[] = [
     name: "Red Fox",
     scientificName: "Vulpes vulpes",
     category: "Mammal",
-    subcategory: "Land Mammal",
+    subcategory: "Canid",
     description:
       "The red fox is the largest of the true foxes and the most geographically widespread member of the order Carnivora. Known for their cunning and adaptability, red foxes have successfully colonised urban environments worldwide. They are solitary hunters with an omnivorous diet.",
     habitat: "Forests, grasslands, mountains, deserts, and urban areas across the Northern Hemisphere",
@@ -1127,7 +1127,7 @@ export const animals: Animal[] = [
     name: "Bottlenose Dolphin",
     scientificName: "Tursiops truncatus",
     category: "Mammal",
-    subcategory: "Land Mammal",
+    subcategory: "Marine Mammal",
     description:
       "The bottlenose dolphin is one of the most well-known and studied cetaceans. They are highly intelligent, social animals that live in groups called pods. They communicate using a complex system of clicks, whistles, and body language, and each individual has a unique signature whistle.",
     habitat: "Warm and temperate seas worldwide, including coastal and offshore waters",
@@ -1157,7 +1157,7 @@ export const animals: Animal[] = [
     name: "Koala",
     scientificName: "Phascolarctos cinereus",
     category: "Mammal",
-    subcategory: "Land Mammal",
+    subcategory: "Marsupial",
     description:
       "The koala is an iconic Australian marsupial known for its round, fluffy ears and large nose. They spend most of their lives in eucalyptus trees, sleeping up to 22 hours a day to conserve energy. Their diet of eucalyptus leaves is toxic to most animals, but koalas have specialised digestive systems to detoxify the leaves.",
     habitat: "Eucalyptus forests and woodlands of eastern and southeastern Australia",
@@ -1248,7 +1248,7 @@ export const animals: Animal[] = [
     name: "Mandrill",
     scientificName: "Mandrillus sphinx",
     category: "Mammal",
-    subcategory: "Land Mammal",
+    subcategory: "Primate",
     description:
       "The mandrill is the world's largest monkey and is known for its striking, colourful face — males have vivid blue and red facial markings. They live in large social groups called hordes and are found in the rainforests of equatorial Africa. The intensity of their colours reflects their social status and health.",
     habitat: "Tropical rainforests of equatorial Africa, particularly Cameroon, Gabon, and Congo",
@@ -1278,7 +1278,7 @@ export const animals: Animal[] = [
     name: "Sea Otter",
     scientificName: "Enhydra lutris",
     category: "Mammal",
-    subcategory: "Land Mammal",
+    subcategory: "Marine Mammal",
     description:
       "The sea otter is the heaviest member of the weasel family and one of the few non-primate mammals known to use tools. They float on their backs and use rocks to crack open shellfish. Sea otters are a keystone species — their presence is essential for maintaining healthy kelp forest ecosystems.",
     habitat: "Coastal waters of the northern and eastern North Pacific Ocean",
@@ -1949,7 +1949,7 @@ export const animals: Animal[] = [
     name: "Great White Shark",
     scientificName: "Carcharodon carcharias",
     category: "Fish",
-    subcategory: "Ocean Fish",
+    subcategory: "Shark",
     description:
       "The great white shark is the ocean's apex predator and the largest predatory fish on Earth. With rows of serrated teeth and an extraordinary sense of smell capable of detecting a single drop of blood in 100 litres of water, they are perfectly evolved hunters.",
     habitat: "Coastal and offshore waters in temperate and tropical oceans worldwide",
@@ -1980,7 +1980,7 @@ export const animals: Animal[] = [
     name: "Clownfish",
     scientificName: "Amphiprioninae",
     category: "Fish",
-    subcategory: "Ocean Fish",
+    subcategory: "Reef Fish",
     description:
       "Clownfish are small, brightly coloured fish famous for their symbiotic relationship with sea anemones. They are immune to the anemone's stinging tentacles and live among them for protection. All clownfish are born male, and the dominant individual in a group can change sex to become female.",
     habitat: "Warm waters of the Indian and Pacific Oceans, living among sea anemones",
@@ -2010,7 +2010,7 @@ export const animals: Animal[] = [
     name: "Whale Shark",
     scientificName: "Rhincodon typus",
     category: "Fish",
-    subcategory: "Ocean Fish",
+    subcategory: "Shark",
     description:
       "The whale shark is the world's largest fish, reaching lengths of up to 12 metres. Despite its enormous size, it is a gentle filter feeder, consuming tiny plankton, fish eggs, and small fish. It is the only member of its genus and family. Each whale shark has a unique pattern of spots, like a fingerprint.",
     habitat: "Tropical and warm temperate seas worldwide, preferring open ocean",
@@ -2310,7 +2310,7 @@ export const animals: Animal[] = [
     name: "Great Hammerhead Shark",
     scientificName: "Sphyrna mokarran",
     category: "Fish",
-    subcategory: "Ocean Fish",
+    subcategory: "Shark",
     description:
       "The great hammerhead is the largest of the nine hammerhead shark species. Its distinctive hammer-shaped head, called a cephalofoil, provides enhanced sensory capabilities — it can detect the electrical fields of prey buried in sand. They are solitary hunters and are considered dangerous to humans.",
     habitat: "Coastal and offshore tropical and warm temperate waters worldwide",
@@ -2430,7 +2430,7 @@ export const animals: Animal[] = [
     name: "Peacock Mantis Shrimp",
     scientificName: "Odontodactylus scyllarus",
     category: "Fish",
-    subcategory: "Ocean Fish",
+    subcategory: "Crustacean",
     description:
       "The peacock mantis shrimp is one of the most remarkable creatures in the ocean. It has the most complex eyes of any known animal, with 16 types of colour receptors (humans have 3). Its club-like appendages can strike with the speed of a bullet, generating cavitation bubbles that can shatter glass aquarium walls.",
     habitat: "Tropical and subtropical coral reefs of the Indo-Pacific",
@@ -2521,7 +2521,7 @@ export const animals: Animal[] = [
     name: "Green Sea Turtle",
     scientificName: "Chelonia mydas",
     category: "Reptile",
-    subcategory: "Land Reptile",
+    subcategory: "Marine Reptile",
     description:
       "The green sea turtle is one of the largest sea turtles and the only herbivorous sea turtle as an adult. They are named for the greenish colour of their fat, not their shell. They are known for their remarkable navigational abilities, returning to the same beach where they were born to lay their eggs.",
     habitat: "Tropical and subtropical coastal waters worldwide; nests on sandy beaches",
@@ -2847,7 +2847,7 @@ export const animals: Animal[] = [
     name: "Axolotl",
     scientificName: "Ambystoma mexicanum",
     category: "Amphibian",
-    subcategory: "Land Amphibian",
+    subcategory: "Aquatic Amphibian",
     description:
       "The axolotl is a remarkable salamander that retains its larval features throughout its life — a phenomenon called neoteny. It is famous for its extraordinary regenerative abilities, capable of regrowing entire limbs, parts of its heart, and even portions of its brain. It is critically endangered in the wild, found only in Lake Xochimilco near Mexico City.",
     habitat: "Lake Xochimilco and surrounding canals near Mexico City, Mexico",
@@ -3112,7 +3112,7 @@ export const animals: Animal[] = [
     name: "Woolly Mammoth",
     scientificName: "Mammuthus primigenius",
     category: "Extinct Animal",
-    subcategory: "Prehistoric",
+    subcategory: "Extinct Mammal",
     description:
       "The woolly mammoth was a massive, shaggy-haired relative of today's elephants that roamed the cold tundras of the Northern Hemisphere during the last Ice Age. They went extinct around 4,000 years ago, likely due to a combination of climate change and human hunting.",
     habitat: "Cold tundra and grasslands (mammoth steppe) across Eurasia and North America",
@@ -3143,7 +3143,7 @@ export const animals: Animal[] = [
     name: "Dodo",
     scientificName: "Raphus cucullatus",
     category: "Extinct Animal",
-    subcategory: "Prehistoric",
+    subcategory: "Extinct Flightless Bird",
     description:
       "The dodo was a flightless bird endemic to the island of Mauritius. Having evolved in isolation with no natural predators, it lost the ability to fly and had no fear of humans. After Dutch sailors arrived in 1598, the dodo was hunted to extinction within less than a century.",
     habitat: "Forests of Mauritius island in the Indian Ocean",
@@ -3345,7 +3345,7 @@ export const animals: Animal[] = [
     name: "Great Auk",
     scientificName: "Pinguinus impennis",
     category: "Extinct Animal",
-    subcategory: "Prehistoric",
+    subcategory: "Extinct Flightless Bird",
     description:
       "The great auk was a large, flightless seabird that was the original 'penguin' — the word 'penguin' was first applied to this bird before being transferred to the unrelated Southern Hemisphere birds. It was hunted to extinction for its feathers, oil, and meat. The last confirmed individuals were killed in 1844.",
     habitat: "Rocky islands and coastal waters of the North Atlantic",
@@ -3375,7 +3375,7 @@ export const animals: Animal[] = [
     name: "Megalodon",
     scientificName: "Otodus megalodon",
     category: "Extinct Animal",
-    subcategory: "Prehistoric",
+    subcategory: "Extinct Shark",
     description:
       "Megalodon was the largest shark and one of the largest fish that ever lived. It could reach lengths of up to 18 metres and had teeth up to 18 cm long. It was the apex predator of its time, feeding on large marine mammals including whales. It went extinct approximately 3.6 million years ago.",
     habitat: "Warm, shallow coastal waters worldwide during the Miocene and Pliocene epochs",
@@ -3405,7 +3405,7 @@ export const animals: Animal[] = [
     name: "Pterodactylus",
     scientificName: "Pterodactylus antiquus",
     category: "Extinct Animal",
-    subcategory: "Prehistoric",
+    subcategory: "Flying Reptile",
     description:
       "Pterodactylus was one of the first pterosaurs to be identified as a flying reptile. It lived during the Late Jurassic period, about 150 million years ago. It had a wingspan of up to 1.5 metres and a long, toothless beak. Despite popular belief, pterosaurs were not dinosaurs — they were a separate group of flying reptiles.",
     habitat: "Coastal areas and islands of what is now Europe during the Late Jurassic",
@@ -3496,7 +3496,7 @@ export const animals: Animal[] = [
     name: "Goliath Beetle",
     scientificName: "Goliathus goliatus",
     category: "Insect",
-    subcategory: "Flying Insect",
+    subcategory: "Crawling Insect",
     description:
       "The Goliath beetle is one of the largest and heaviest insects on Earth. Native to the tropical rainforests of Africa, these impressive beetles can weigh up to 100 grams as larvae and reach 11 centimetres in length as adults. Males have a distinctive Y-shaped horn on their heads used for fighting rival males.",
     habitat: "Tropical rainforests of equatorial Africa",
@@ -3587,7 +3587,7 @@ export const animals: Animal[] = [
     name: "Hercules Beetle",
     scientificName: "Dynastes hercules",
     category: "Insect",
-    subcategory: "Flying Insect",
+    subcategory: "Crawling Insect",
     description:
       "The Hercules beetle is the longest beetle in the world and one of the largest flying insects. Males have two enormous horns — one on the head and one on the thorax — used for fighting over females. Despite their intimidating appearance, they are harmless to humans. They are named after the Greek hero Hercules for their incredible strength.",
     habitat: "Tropical rainforests of Central and South America and the Caribbean",
@@ -3645,7 +3645,7 @@ export const animals: Animal[] = [
     name: "Bullet Ant",
     scientificName: "Paraponera clavata",
     category: "Insect",
-    subcategory: "Flying Insect",
+    subcategory: "Crawling Insect",
     description:
       "The bullet ant is named for its sting, which is described as feeling like being shot by a bullet. It has the most painful sting of any insect, rated at the top of the Schmidt Pain Index. It is found in the rainforests of Central and South America. Some indigenous tribes use bullet ants in initiation rituals.",
     habitat: "Tropical rainforests of Central and South America",
@@ -3803,7 +3803,7 @@ export const animals: Animal[] = [
     name: "Leafcutter Ant",
     scientificName: "Atta cephalotes",
     category: "Insect",
-    subcategory: "Flying Insect",
+    subcategory: "Crawling Insect",
     description:
       "Leafcutter ants are among the most sophisticated farmers in the animal kingdom. They cut leaves and carry them back to their underground nests, not to eat them, but to cultivate a fungus that they feed to their larvae. Their colonies can contain up to 8 million individuals and their underground nests can be as large as a house.",
     habitat: "Tropical and subtropical forests and grasslands of Central and South America",
