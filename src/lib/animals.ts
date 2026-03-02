@@ -37,10 +37,143 @@ export interface Animal {
 export const animals: Animal[] = [
   // ─── MAMMALS ───────────────────────────────────────────────────────────────
   {
+      "id": "owl",
+      "name": "Great Horned Owl",
+      "scientificName": "Bubo virginianus",
+      "category": "Bird",
+      "subcategory": "Flying Bird",
+      "description": "A large, powerful owl native to the Americas, known for its tufts of feathers that look like 'horns'.",
+      "habitat": "Forests, deserts, and urban areas",
+      "diet": "Carnivore — small mammals and birds",
+      "lifespan": "15-20 years",
+      "weight": "0.9-2.5 kg",
+      "length": "43-64 cm",
+      "conservationStatus": "Least Concern",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Great_Horned_Owl_Bubo_virginianus_at_the_Arizona-Sonora_Desert_Museum.jpg/1280px-Great_Horned_Owl_Bubo_virginianus_at_the_Arizona-Sonora_Desert_Museum.jpg",
+      "videoId": "Wr_Ev0Oe5Ck",
+      "funFacts": [
+        "They have exceptional night vision.",
+        "They can rotate their heads 270 degrees."
+      ],
+      "locations": [
+        {
+          "name": "North America",
+          "lat": 40,
+          "lng": -100
+        }
+      ],
+      "mapRegion": "Americas",
+      "tags": [
+        "bird",
+        "owl",
+        "night"
+      ]
+    },
+    {
+      "id": "macaw",
+      "name": "Scarlet Macaw",
+      "scientificName": "Ara macao",
+      "category": "Bird",
+      "subcategory": "Flying Bird",
+      "description": "A large, colorful parrot native to Central and South American rainforests.",
+      "habitat": "Tropical rainforests",
+      "diet": "Herbivore — seeds and fruit",
+      "lifespan": "40-50 years",
+      "weight": "0.9-1 kg",
+      "length": "81-96 cm",
+      "conservationStatus": "Least Concern",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Scarlet_Macaw_-_Ara_macao_-_at_the_Cincinnati_Zoo.jpg/1280px-Scarlet_Macaw_-_Ara_macao_-_at_the_Cincinnati_Zoo.jpg",
+      "videoId": "Wr_Ev0Oe5Ck",
+      "funFacts": [
+        "They mate for life.",
+        "They use their beaks to climb trees."
+      ],
+      "locations": [
+        {
+          "name": "South America",
+          "lat": -10,
+          "lng": -60
+        }
+      ],
+      "mapRegion": "Americas",
+      "tags": [
+        "bird",
+        "parrot",
+        "colorful"
+      ]
+    },
+    {
+      "id": "kingfisher",
+      "name": "Common Kingfisher",
+      "scientificName": "Alcedo atthis",
+      "category": "Bird",
+      "subcategory": "Flying Bird",
+      "description": "A small, brightly coloured bird known for its spectacular diving to catch fish.",
+      "habitat": "Near rivers, lakes, and streams",
+      "diet": "Carnivore — primarily fish",
+      "lifespan": "7-10 years",
+      "weight": "34-46 g",
+      "length": "16-17 cm",
+      "conservationStatus": "Least Concern",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Common_Kingfisher_Alcedo_atthis.jpg/1280px-Common_Kingfisher_Alcedo_atthis.jpg",
+      "videoId": "Wr_Ev0Oe5Ck",
+      "funFacts": [
+        "They can see under water.",
+        "They are very territorial."
+      ],
+      "locations": [
+        {
+          "name": "Europe & Asia",
+          "lat": 50,
+          "lng": 10
+        }
+      ],
+      "mapRegion": "Eurasia",
+      "tags": [
+        "bird",
+        "colorful",
+        "fisher"
+      ]
+    },
+    {
+      "id": "woodpecker",
+      "name": "Great Spotted Woodpecker",
+      "scientificName": "Dendrocopos major",
+      "category": "Bird",
+      "subcategory": "Flying Bird",
+      "description": "A medium-sized woodpecker with black and white plumage and a red patch on the lower belly.",
+      "habitat": "Woodlands and gardens",
+      "diet": "Omnivore — insects, seeds, and nuts",
+      "lifespan": "10-15 years",
+      "weight": "70-90 g",
+      "length": "20-24 cm",
+      "conservationStatus": "Least Concern",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Great_Spotted_Woodpecker_Dendrocopos_major.jpg/1280px-Great_Spotted_Woodpecker_Dendrocopos_major.jpg",
+      "videoId": "Wr_Ev0Oe5Ck",
+      "funFacts": [
+        "They drum on trees to communicate.",
+        "They have extremely long tongues."
+      ],
+      "locations": [
+        {
+          "name": "Europe & North Africa",
+          "lat": 45,
+          "lng": 5
+        }
+      ],
+      "mapRegion": "Eurasia",
+      "tags": [
+        "bird",
+        "woodland",
+        "drummer"
+      ]
+    },
+    {
     id: "african-elephant",
     name: "African Elephant",
     scientificName: "Loxodonta africana",
     category: "Mammal",
+    subcategory: "Land Mammal",
     description:
       "The African elephant is the world's largest land animal. These magnificent creatures are known for their intelligence, complex social structures, and remarkable memory. They live in matriarchal herds led by the oldest female and communicate through a variety of sounds, including infrasound too low for humans to hear.",
     habitat: "Savannas, forests, deserts, and marshes across sub-Saharan Africa",
@@ -80,6 +213,7 @@ export const animals: Animal[] = [
     name: "Blue Whale",
     scientificName: "Balaenoptera musculus",
     category: "Mammal",
+    subcategory: "Land Mammal",
     description:
       "The blue whale is the largest animal ever known to have existed on Earth. These ocean giants can reach lengths of up to 30 metres and weigh as much as 200 tonnes. Despite their enormous size, they feed almost exclusively on tiny shrimp-like creatures called krill, consuming up to 4 tonnes per day during feeding season.",
     habitat: "Open oceans worldwide, preferring deep offshore waters",
@@ -119,6 +253,7 @@ export const animals: Animal[] = [
     name: "Snow Leopard",
     scientificName: "Panthera uncia",
     category: "Mammal",
+    subcategory: "Land Mammal",
     description:
       "The snow leopard is one of the world's most elusive big cats, perfectly adapted to life in the cold, rugged mountains of Central Asia. Their thick, spotted fur provides camouflage and insulation, while their large paws act as natural snowshoes. They are known as the 'ghost of the mountains' due to their secretive nature.",
     habitat: "Mountain ranges of Central Asia, including the Himalayas and Tibetan Plateau",
@@ -158,6 +293,7 @@ export const animals: Animal[] = [
     name: "Giant Panda",
     scientificName: "Ailuropoda melanoleuca",
     category: "Mammal",
+    subcategory: "Land Mammal",
     description:
       "The giant panda is one of the world's most beloved and recognisable animals, known for its distinctive black and white colouring. Native to the mountain forests of central China, pandas spend up to 16 hours a day eating bamboo. Conservation efforts have helped bring this species back from the brink of extinction.",
     habitat: "Temperate broadleaf and mixed forests in the mountains of central China",
@@ -196,6 +332,7 @@ export const animals: Animal[] = [
     name: "Arctic Wolf",
     scientificName: "Canis lupus arctos",
     category: "Mammal",
+    subcategory: "Land Mammal",
     description:
       "The Arctic wolf is a subspecies of grey wolf that has adapted to survive in one of the harshest environments on Earth. Their thick white fur provides both insulation and camouflage in the snow. Unlike other wolf subspecies, Arctic wolves are not threatened by hunting or habitat loss due to their remote habitat.",
     habitat: "Arctic tundra of North America and Greenland",
@@ -234,6 +371,7 @@ export const animals: Animal[] = [
     name: "Humpback Whale",
     scientificName: "Megaptera novaeangliae",
     category: "Mammal",
+    subcategory: "Land Mammal",
     description:
       "Humpback whales are famous for their spectacular acrobatic displays and complex, haunting songs. These ocean giants migrate up to 25,000 kilometres each year between their feeding grounds in polar waters and their breeding grounds in tropical seas.",
     habitat: "All major oceans, from polar to tropical waters",
@@ -273,6 +411,7 @@ export const animals: Animal[] = [
     name: "Bengal Tiger",
     scientificName: "Panthera tigris tigris",
     category: "Mammal",
+    subcategory: "Land Mammal",
     description:
       "The Bengal tiger is the most numerous tiger subspecies and is found primarily in India. These powerful predators are solitary hunters that use their distinctive orange and black striped coats as camouflage in tall grasses and forests. Each tiger's stripe pattern is unique, like a human fingerprint.",
     habitat: "Tropical and subtropical moist broadleaf forests, grasslands, and mangroves",
@@ -312,6 +451,7 @@ export const animals: Animal[] = [
     name: "African Lion",
     scientificName: "Panthera leo",
     category: "Mammal",
+    subcategory: "Land Mammal",
     description:
       "The African lion is the second-largest big cat and the only truly social cat species, living in groups called prides. Males are distinguished by their impressive manes, which signal health and dominance. Lions are apex predators that play a crucial role in maintaining the balance of their ecosystems.",
     habitat: "Savannas, grasslands, and open woodlands of sub-Saharan Africa",
@@ -351,6 +491,7 @@ export const animals: Animal[] = [
     name: "Cheetah",
     scientificName: "Acinonyx jubatus",
     category: "Mammal",
+    subcategory: "Land Mammal",
     description:
       "The cheetah is the fastest land animal on Earth, capable of reaching speeds of up to 120 km/h in short bursts. Unlike other big cats, cheetahs cannot roar but can purr. They are slender, built for speed with a flexible spine, long legs, and a deep chest for maximum oxygen intake.",
     habitat: "Open grasslands, savannas, and semi-arid areas of Africa and Iran",
@@ -390,6 +531,7 @@ export const animals: Animal[] = [
     name: "Mountain Gorilla",
     scientificName: "Gorilla beringei beringei",
     category: "Mammal",
+    subcategory: "Land Mammal",
     description:
       "Mountain gorillas are the largest living primates and one of our closest relatives, sharing about 98% of their DNA with humans. They live in family groups led by a dominant silverback male. Despite their fearsome appearance, they are gentle herbivores that spend most of their time foraging and resting.",
     habitat: "Montane forests of the Virunga Mountains and Bwindi Impenetrable Forest",
@@ -428,6 +570,7 @@ export const animals: Animal[] = [
     name: "Polar Bear",
     scientificName: "Ursus maritimus",
     category: "Mammal",
+    subcategory: "Land Mammal",
     description:
       "The polar bear is the world's largest land carnivore and is perfectly adapted to life in the Arctic. Their white fur provides camouflage in the snow, while a thick layer of fat insulates them from the cold. They are classified as marine mammals because they spend most of their lives on sea ice.",
     habitat: "Arctic sea ice, coastal areas, and open water",
@@ -467,6 +610,7 @@ export const animals: Animal[] = [
     name: "Bornean Orangutan",
     scientificName: "Pongo pygmaeus",
     category: "Mammal",
+    subcategory: "Land Mammal",
     description:
       "Orangutans are the world's largest arboreal mammals and the most intelligent non-human primates. They are highly solitary and spend most of their lives in the forest canopy. Their name means 'person of the forest' in Malay. They are critically endangered due to deforestation and the palm oil industry.",
     habitat: "Tropical and subtropical moist broadleaf forests of Borneo",
@@ -504,6 +648,7 @@ export const animals: Animal[] = [
     name: "African Wild Dog",
     scientificName: "Lycaon pictus",
     category: "Mammal",
+    subcategory: "Land Mammal",
     description:
       "The African wild dog is one of the world's most endangered carnivores and Africa's most efficient predator, with a hunting success rate of up to 80%. They live in highly cooperative packs and are known for their unique mottled coat patterns, which are different on every individual.",
     habitat: "Open savannas, grasslands, and lightly wooded areas of sub-Saharan Africa",
@@ -542,6 +687,7 @@ export const animals: Animal[] = [
     name: "Narwhal",
     scientificName: "Monodon monoceros",
     category: "Mammal",
+    subcategory: "Land Mammal",
     description:
       "The narwhal is a medium-sized toothed whale known for its long, spiral tusk, which is actually an elongated upper left canine tooth. Often called the 'unicorn of the sea', narwhals live year-round in the Arctic waters around Greenland, Canada, and Russia. Their tusks can grow up to 3 metres long.",
     habitat: "Arctic waters of Canada, Greenland, Norway, and Russia",
@@ -580,6 +726,7 @@ export const animals: Animal[] = [
     name: "Jaguar",
     scientificName: "Panthera onca",
     category: "Mammal",
+    subcategory: "Land Mammal",
     description:
       "The jaguar is the largest cat in the Americas and the third-largest in the world. Unlike other big cats, jaguars love water and are strong swimmers. They have the most powerful bite of any big cat relative to their size, capable of piercing turtle shells and crocodile skulls.",
     habitat: "Tropical rainforests, wetlands, and grasslands of Central and South America",
@@ -619,6 +766,7 @@ export const animals: Animal[] = [
     name: "Hippopotamus",
     scientificName: "Hippopotamus amphibius",
     category: "Mammal",
+    subcategory: "Land Mammal",
     description:
       "The hippopotamus is the third-largest land mammal and one of the most dangerous animals in Africa. Despite their bulky appearance, hippos are excellent swimmers and can run at speeds of up to 30 km/h on land. They spend most of the day in water to keep cool and emerge at night to graze.",
     habitat: "Rivers, lakes, and wetlands of sub-Saharan Africa",
@@ -648,6 +796,7 @@ export const animals: Animal[] = [
     name: "Giraffe",
     scientificName: "Giraffa camelopardalis",
     category: "Mammal",
+    subcategory: "Land Mammal",
     description:
       "The giraffe is the world's tallest living terrestrial animal, with males reaching heights of up to 5.8 metres. Their long necks allow them to reach leaves in the tops of acacia trees that other animals cannot access. Despite their long necks, giraffes have the same number of vertebrae as humans — just seven.",
     habitat: "Savannas, grasslands, and open woodlands of sub-Saharan Africa",
@@ -677,6 +826,7 @@ export const animals: Animal[] = [
     name: "Red Panda",
     scientificName: "Ailurus fulgens",
     category: "Mammal",
+    subcategory: "Land Mammal",
     description:
       "The red panda is a small mammal native to the eastern Himalayas and southwestern China. Despite sharing a name with the giant panda, it is not closely related. Red pandas are skilled climbers and spend most of their time in trees. They are known for their striking reddish-brown fur and bushy, ringed tails.",
     habitat: "Temperate forests with bamboo understory in the Himalayas and southwestern China",
@@ -706,6 +856,7 @@ export const animals: Animal[] = [
     name: "Platypus",
     scientificName: "Ornithorhynchus anatinus",
     category: "Mammal",
+    subcategory: "Land Mammal",
     description:
       "The platypus is one of the most unusual mammals on Earth — a semi-aquatic egg-laying mammal with a duck-like bill, beaver-like tail, and otter-like feet. Males have venomous spurs on their hind legs. When first described to European scientists, many thought it was a hoax.",
     habitat: "Freshwater rivers, streams, and lakes of eastern Australia and Tasmania",
@@ -735,6 +886,7 @@ export const animals: Animal[] = [
     name: "Capybara",
     scientificName: "Hydrochoerus hydrochaeris",
     category: "Mammal",
+    subcategory: "Land Mammal",
     description:
       "The capybara is the world's largest rodent, native to South America. These semi-aquatic mammals are highly social and live in groups of 10–20 individuals near bodies of water. They are known for their calm temperament and are often seen with birds perched on their backs.",
     habitat: "Savannas, dense forests, and wetlands near rivers and lakes in South America",
@@ -764,6 +916,7 @@ export const animals: Animal[] = [
     name: "Wolverine",
     scientificName: "Gulo gulo",
     category: "Mammal",
+    subcategory: "Land Mammal",
     description:
       "The wolverine is the largest land-dwelling member of the weasel family and is known for its ferocity and strength. Despite its relatively small size, it can take down prey much larger than itself and has been known to drive bears and mountain lions away from kills. It has a reputation as one of the toughest animals in the world.",
     habitat: "Boreal forests, tundra, and alpine regions of North America, Europe, and Asia",
@@ -794,6 +947,7 @@ export const animals: Animal[] = [
     name: "Giant Manta Ray",
     scientificName: "Mobula birostris",
     category: "Mammal",
+    subcategory: "Land Mammal",
     description:
       "The giant manta ray is the world's largest ray, with a wingspan that can reach up to 7 metres. Despite their enormous size, they are filter feeders, consuming tiny plankton and small fish. They are known for their acrobatic leaps out of the water and their curious, gentle nature around divers.",
     habitat: "Tropical and subtropical oceans worldwide, often near coral reefs and productive coastlines",
@@ -823,6 +977,7 @@ export const animals: Animal[] = [
     name: "Orca (Killer Whale)",
     scientificName: "Orcinus orca",
     category: "Mammal",
+    subcategory: "Land Mammal",
     description:
       "The orca, or killer whale, is the largest member of the dolphin family and one of the ocean's most powerful predators. They are highly intelligent, social animals that live in complex family groups called pods. Different populations have distinct cultures, dialects, and hunting techniques passed down through generations.",
     habitat: "All oceans, from Arctic and Antarctic regions to tropical seas",
@@ -853,6 +1008,7 @@ export const animals: Animal[] = [
     name: "Red Fox",
     scientificName: "Vulpes vulpes",
     category: "Mammal",
+    subcategory: "Land Mammal",
     description:
       "The red fox is the largest of the true foxes and the most geographically widespread member of the order Carnivora. Known for their cunning and adaptability, red foxes have successfully colonised urban environments worldwide. They are solitary hunters with an omnivorous diet.",
     habitat: "Forests, grasslands, mountains, deserts, and urban areas across the Northern Hemisphere",
@@ -882,6 +1038,7 @@ export const animals: Animal[] = [
     name: "Giant Anteater",
     scientificName: "Myrmecophaga tridactyla",
     category: "Mammal",
+    subcategory: "Land Mammal",
     description:
       "The giant anteater is the largest of the four anteater species and is found in Central and South America. It has no teeth and uses its long, sticky tongue — which can extend 60 cm and flick 150 times per minute — to consume up to 35,000 ants and termites per day.",
     habitat: "Grasslands, savannas, and tropical forests of Central and South America",
@@ -911,6 +1068,7 @@ export const animals: Animal[] = [
     name: "Japanese Macaque",
     scientificName: "Macaca fuscata",
     category: "Mammal",
+    subcategory: "Land Mammal",
     description:
       "The Japanese macaque, also known as the snow monkey, is the most northerly-living non-human primate. They are famous for bathing in hot springs during winter in the Japanese Alps. They have pink faces, grey-brown fur, and short tails. They live in complex social groups and are known for their intelligence.",
     habitat: "Forests of Japan, from subtropical to subarctic regions",
@@ -939,6 +1097,7 @@ export const animals: Animal[] = [
     name: "Meerkat",
     scientificName: "Suricata suricatta",
     category: "Mammal",
+    subcategory: "Land Mammal",
     description:
       "Meerkats are small, highly social mongooses that live in the Kalahari Desert. They live in groups called mobs or gangs and take turns acting as sentinels, watching for predators from elevated positions. They are immune to certain venoms and can eat scorpions and venomous snakes.",
     habitat: "Arid savannas and open plains of the Kalahari Desert in southern Africa",
@@ -968,6 +1127,7 @@ export const animals: Animal[] = [
     name: "Bottlenose Dolphin",
     scientificName: "Tursiops truncatus",
     category: "Mammal",
+    subcategory: "Land Mammal",
     description:
       "The bottlenose dolphin is one of the most well-known and studied cetaceans. They are highly intelligent, social animals that live in groups called pods. They communicate using a complex system of clicks, whistles, and body language, and each individual has a unique signature whistle.",
     habitat: "Warm and temperate seas worldwide, including coastal and offshore waters",
@@ -997,6 +1157,7 @@ export const animals: Animal[] = [
     name: "Koala",
     scientificName: "Phascolarctos cinereus",
     category: "Mammal",
+    subcategory: "Land Mammal",
     description:
       "The koala is an iconic Australian marsupial known for its round, fluffy ears and large nose. They spend most of their lives in eucalyptus trees, sleeping up to 22 hours a day to conserve energy. Their diet of eucalyptus leaves is toxic to most animals, but koalas have specialised digestive systems to detoxify the leaves.",
     habitat: "Eucalyptus forests and woodlands of eastern and southeastern Australia",
@@ -1026,6 +1187,7 @@ export const animals: Animal[] = [
     name: "Black Rhinoceros",
     scientificName: "Diceros bicornis",
     category: "Mammal",
+    subcategory: "Land Mammal",
     description:
       "The black rhinoceros is a critically endangered species native to eastern and southern Africa. Despite its name, it is not actually black — the name distinguishes it from the white rhinoceros. They are browsers, using their prehensile upper lip to grasp leaves and twigs. Their horns are made of keratin, the same material as human fingernails.",
     habitat: "Tropical and subtropical grasslands, savannas, and shrublands of eastern and southern Africa",
@@ -1056,6 +1218,7 @@ export const animals: Animal[] = [
     name: "Clouded Leopard",
     scientificName: "Neofelis nebulosa",
     category: "Mammal",
+    subcategory: "Land Mammal",
     description:
       "The clouded leopard is a medium-sized wild cat found in the Himalayan foothills and Southeast Asia. It has the longest canine teeth relative to body size of any living cat. Despite its name, it is not closely related to the leopard. It is an excellent climber and can hang upside down from branches.",
     habitat: "Tropical and subtropical forests of the Himalayan foothills and Southeast Asia",
@@ -1085,6 +1248,7 @@ export const animals: Animal[] = [
     name: "Mandrill",
     scientificName: "Mandrillus sphinx",
     category: "Mammal",
+    subcategory: "Land Mammal",
     description:
       "The mandrill is the world's largest monkey and is known for its striking, colourful face — males have vivid blue and red facial markings. They live in large social groups called hordes and are found in the rainforests of equatorial Africa. The intensity of their colours reflects their social status and health.",
     habitat: "Tropical rainforests of equatorial Africa, particularly Cameroon, Gabon, and Congo",
@@ -1114,6 +1278,7 @@ export const animals: Animal[] = [
     name: "Sea Otter",
     scientificName: "Enhydra lutris",
     category: "Mammal",
+    subcategory: "Land Mammal",
     description:
       "The sea otter is the heaviest member of the weasel family and one of the few non-primate mammals known to use tools. They float on their backs and use rocks to crack open shellfish. Sea otters are a keystone species — their presence is essential for maintaining healthy kelp forest ecosystems.",
     habitat: "Coastal waters of the northern and eastern North Pacific Ocean",
@@ -1143,6 +1308,7 @@ export const animals: Animal[] = [
     name: "Sunda Pangolin",
     scientificName: "Manis javanica",
     category: "Mammal",
+    subcategory: "Land Mammal",
     description:
       "The Sunda pangolin is a scaly anteater found in Southeast Asia. It is the most trafficked mammal in the world, hunted for its scales (used in traditional medicine) and meat. When threatened, it rolls into a tight ball, protected by its overlapping keratin scales. It is the only mammal with true scales.",
     habitat: "Tropical forests, grasslands, and agricultural areas of Southeast Asia",
@@ -1174,6 +1340,8 @@ export const animals: Animal[] = [
     scientificName: "Aptenodytes forsteri",
     category: "Bird",
     subcategory: "Flightless Bird",
+    subcategory: "Flightless Bird",
+    subcategory: "Other",
     description:
       "The emperor penguin is the tallest and heaviest of all penguin species and is endemic to Antarctica. These remarkable birds endure the harshest conditions on Earth to breed during the Antarctic winter. Males incubate eggs on their feet for two months in temperatures as low as -60°C.",
     habitat: "Antarctic sea ice and surrounding waters",
@@ -1204,6 +1372,8 @@ export const animals: Animal[] = [
     scientificName: "Aquila chrysaetos",
     category: "Bird",
     subcategory: "Flying Bird",
+    subcategory: "Flying Bird",
+    subcategory: "Other",
     description:
       "The golden eagle is one of the most widely distributed and revered birds of prey in the Northern Hemisphere. With a wingspan of up to 2.3 metres and eyesight 4–8 times more powerful than a human's, they are supreme aerial hunters.",
     habitat: "Mountains, hills, cliffs, and open country across the Northern Hemisphere",
@@ -1234,6 +1404,7 @@ export const animals: Animal[] = [
     name: "Greater Flamingo",
     scientificName: "Phoenicopterus roseus",
     category: "Bird",
+    subcategory: "Flying Bird",
     description:
       "The greater flamingo is the most widespread flamingo species and is known for its distinctive pink plumage and long, curved neck. Their pink colour comes from carotenoid pigments in the algae and crustaceans they eat. They are highly social birds that live in large flocks called colonies or flamboyances.",
     habitat: "Shallow lakes, lagoons, mangrove swamps, and tidal flats worldwide",
@@ -1265,6 +1436,8 @@ export const animals: Animal[] = [
     scientificName: "Haliaeetus leucocephalus",
     category: "Bird",
     subcategory: "Flying Bird",
+    subcategory: "Flying Bird",
+    subcategory: "Other",
     description:
       "The bald eagle is the national bird and symbol of the United States. It is a large bird of prey found near large open water bodies with abundant food supply and old-growth trees for nesting. Once nearly extinct due to hunting and pesticide use, it has made a remarkable recovery.",
     habitat: "Near large bodies of open water with abundant food supply across North America",
@@ -1294,6 +1467,7 @@ export const animals: Animal[] = [
     name: "Indian Peafowl",
     scientificName: "Pavo cristatus",
     category: "Bird",
+    subcategory: "Flying Bird",
     description:
       "The Indian peafowl, commonly known as the peacock (male) or peahen (female), is one of the most recognisable birds in the world. The male's spectacular tail feathers, called a train, can span up to 1.8 metres and are used in elaborate courtship displays. They are the national bird of India.",
     habitat: "Forests, farmland, and near human settlements in South Asia",
@@ -1323,6 +1497,7 @@ export const animals: Animal[] = [
     name: "Snowy Owl",
     scientificName: "Bubo scandiacus",
     category: "Bird",
+    subcategory: "Flying Bird",
     description:
       "The snowy owl is one of the largest and most powerful owls in the world. Unlike most owls, they are active during the day (diurnal). Their white plumage provides excellent camouflage in the Arctic tundra. Males are almost entirely white, while females and juveniles have dark brown markings.",
     habitat: "Arctic tundra of North America, Europe, and Asia; winters further south",
@@ -1352,6 +1527,7 @@ export const animals: Animal[] = [
     name: "Toco Toucan",
     scientificName: "Ramphastos toco",
     category: "Bird",
+    subcategory: "Flying Bird",
     description:
       "The toco toucan is the largest and most well-known toucan species, famous for its enormous, colourful bill. Despite its size, the bill is lightweight, made of a hollow bone structure covered in keratin. The bill is used for reaching fruit, regulating body temperature, and in courtship displays.",
     habitat: "Tropical and subtropical forests, woodlands, and savannas of South America",
@@ -1381,6 +1557,7 @@ export const animals: Animal[] = [
     name: "Wandering Albatross",
     scientificName: "Diomedea exulans",
     category: "Bird",
+    subcategory: "Flying Bird",
     description:
       "The wandering albatross has the largest wingspan of any living bird, reaching up to 3.5 metres. These magnificent seabirds spend most of their lives soaring over the Southern Ocean, only coming to land to breed. They can travel up to 120,000 km in a single year and live for over 50 years.",
     habitat: "Southern Ocean and sub-Antarctic islands",
@@ -1410,6 +1587,7 @@ export const animals: Animal[] = [
     name: "Harpy Eagle",
     scientificName: "Harpia harpyja",
     category: "Bird",
+    subcategory: "Flying Bird",
     description:
       "The harpy eagle is the largest and most powerful eagle in the Americas and one of the largest in the world. It is the apex aerial predator of the Amazon rainforest, with talons as large as a grizzly bear's claws. It is named after the harpies of Greek mythology — winged spirits.",
     habitat: "Tropical lowland rainforests of Central and South America",
@@ -1439,6 +1617,7 @@ export const animals: Animal[] = [
     name: "Scarlet Macaw",
     scientificName: "Ara macao",
     category: "Bird",
+    subcategory: "Flying Bird",
     description:
       "The scarlet macaw is one of the most colourful and recognisable birds in the world. These large parrots are known for their brilliant red, yellow, and blue plumage. They are highly intelligent, social birds that mate for life and can live for over 75 years. They are found in tropical forests from Mexico to Brazil.",
     habitat: "Tropical and subtropical moist broadleaf forests of Central and South America",
@@ -1468,6 +1647,7 @@ export const animals: Animal[] = [
     name: "Secretary Bird",
     scientificName: "Sagittarius serpentarius",
     category: "Bird",
+    subcategory: "Flying Bird",
     description:
       "The secretary bird is a large, terrestrial bird of prey found in the open grasslands of sub-Saharan Africa. Unlike most raptors, it hunts on foot, using its powerful legs to stomp on prey. It is famous for killing venomous snakes with precise, powerful kicks. It is the only member of its family.",
     habitat: "Open grasslands, savannas, and lightly wooded areas of sub-Saharan Africa",
@@ -1498,6 +1678,8 @@ export const animals: Animal[] = [
     scientificName: "Apteryx mantelli",
     category: "Bird",
     subcategory: "Flightless Bird",
+    subcategory: "Flightless Bird",
+    subcategory: "Other",
     description:
       "The brown kiwi is a flightless bird endemic to New Zealand and the national symbol of the country. It is the smallest ratite and is unique among birds for having nostrils at the tip of its long bill, which it uses to probe the ground for food. Kiwis are nocturnal and have a highly developed sense of smell.",
     habitat: "Forests, scrublands, and grasslands of New Zealand",
@@ -1526,6 +1708,7 @@ export const animals: Animal[] = [
     name: "Resplendent Quetzal",
     scientificName: "Pharomachrus mocinno",
     category: "Bird",
+    subcategory: "Flying Bird",
     description:
       "The resplendent quetzal is considered one of the most beautiful birds in the world. Males have brilliant green plumage and long, flowing tail feathers that can reach up to 1 metre in length. They were sacred to the ancient Maya and Aztec civilisations and are the national bird of Guatemala.",
     habitat: "Cloud forests of Central America, from southern Mexico to Panama",
@@ -1555,6 +1738,7 @@ export const animals: Animal[] = [
     name: "Shoebill",
     scientificName: "Balaeniceps rex",
     category: "Bird",
+    subcategory: "Flying Bird",
     description:
       "The shoebill is a large, prehistoric-looking bird named for its enormous, shoe-shaped bill. It stands up to 1.5 metres tall and is known for its ability to remain motionless for long periods while waiting for prey. It is one of the most sought-after birds by birdwatchers in Africa.",
     habitat: "Tropical swamps and marshes of central tropical Africa",
@@ -1584,6 +1768,7 @@ export const animals: Animal[] = [
     name: "Andean Condor",
     scientificName: "Vultur gryphus",
     category: "Bird",
+    subcategory: "Flying Bird",
     description:
       "The Andean condor is the world's largest flying bird by combined measurement of weight and wingspan. It is a scavenger that soars on thermal currents high above the Andes Mountains. It plays a vital role in its ecosystem by cleaning up carcasses. It is the national symbol of several South American countries.",
     habitat: "Andes Mountains and adjacent Pacific coasts of South America",
@@ -1613,6 +1798,7 @@ export const animals: Animal[] = [
     name: "Atlantic Puffin",
     scientificName: "Fratercula arctica",
     category: "Bird",
+    subcategory: "Flying Bird",
     description:
       "The Atlantic puffin is a seabird known for its colourful beak and clown-like appearance. They are excellent swimmers, using their wings to 'fly' underwater in pursuit of fish. They spend most of their lives at sea and only come to land to breed. They can carry up to 10 fish in their bill at once.",
     habitat: "North Atlantic Ocean; breeds on rocky coastal cliffs and islands",
@@ -1642,6 +1828,7 @@ export const animals: Animal[] = [
     name: "Common Ostrich",
     scientificName: "Struthio camelus",
     category: "Bird",
+    subcategory: "Flightless Bird",
     description:
       "The common ostrich is the world's largest and heaviest bird, and the fastest running bird on Earth. It cannot fly, but can run at speeds of up to 70 km/h and maintain 50 km/h for extended periods. Its powerful legs can deliver kicks capable of killing a lion. It lays the largest eggs of any living bird.",
     habitat: "Savannas, grasslands, and semi-arid areas of Africa",
@@ -1671,6 +1858,7 @@ export const animals: Animal[] = [
     name: "Barn Owl",
     scientificName: "Tyto alba",
     category: "Bird",
+    subcategory: "Flying Bird",
     description:
       "The barn owl is the most widely distributed owl species and one of the most widespread birds in the world. It is known for its distinctive heart-shaped face, which acts as a parabolic reflector to channel sound to its ears. It can locate prey in complete darkness using sound alone.",
     habitat: "Open habitats including farmland, grasslands, and woodland edges worldwide",
@@ -1700,6 +1888,7 @@ export const animals: Animal[] = [
     name: "Blue-footed Booby",
     scientificName: "Sula nebouxii",
     category: "Bird",
+    subcategory: "Flying Bird",
     description:
       "The blue-footed booby is a marine bird famous for its bright blue feet, which play a central role in its courtship display. Males strut and show off their feet to attract females — the brighter the blue, the healthier the male. They are expert divers, plunging into the ocean from heights of up to 24 metres.",
     habitat: "Tropical and subtropical Pacific coasts of the Americas",
@@ -1729,6 +1918,7 @@ export const animals: Animal[] = [
     name: "Hoatzin",
     scientificName: "Opisthocomus hoazin",
     category: "Bird",
+    subcategory: "Flying Bird",
     description:
       "The hoatzin is a bizarre, prehistoric-looking bird found in the Amazon and Orinoco basins. It is the only bird known to have a digestive system similar to a cow, fermenting leaves in its crop. Chicks have claws on their wings, which they use to climb trees — a trait reminiscent of early bird ancestors.",
     habitat: "Tropical swamps, riparian forests, and mangroves of the Amazon and Orinoco basins",
@@ -1759,6 +1949,7 @@ export const animals: Animal[] = [
     name: "Great White Shark",
     scientificName: "Carcharodon carcharias",
     category: "Fish",
+    subcategory: "Ocean Fish",
     description:
       "The great white shark is the ocean's apex predator and the largest predatory fish on Earth. With rows of serrated teeth and an extraordinary sense of smell capable of detecting a single drop of blood in 100 litres of water, they are perfectly evolved hunters.",
     habitat: "Coastal and offshore waters in temperate and tropical oceans worldwide",
@@ -1789,6 +1980,7 @@ export const animals: Animal[] = [
     name: "Clownfish",
     scientificName: "Amphiprioninae",
     category: "Fish",
+    subcategory: "Ocean Fish",
     description:
       "Clownfish are small, brightly coloured fish famous for their symbiotic relationship with sea anemones. They are immune to the anemone's stinging tentacles and live among them for protection. All clownfish are born male, and the dominant individual in a group can change sex to become female.",
     habitat: "Warm waters of the Indian and Pacific Oceans, living among sea anemones",
@@ -1818,6 +2010,7 @@ export const animals: Animal[] = [
     name: "Whale Shark",
     scientificName: "Rhincodon typus",
     category: "Fish",
+    subcategory: "Ocean Fish",
     description:
       "The whale shark is the world's largest fish, reaching lengths of up to 12 metres. Despite its enormous size, it is a gentle filter feeder, consuming tiny plankton, fish eggs, and small fish. It is the only member of its genus and family. Each whale shark has a unique pattern of spots, like a fingerprint.",
     habitat: "Tropical and warm temperate seas worldwide, preferring open ocean",
@@ -1848,6 +2041,7 @@ export const animals: Animal[] = [
     name: "Red Lionfish",
     scientificName: "Pterois volitans",
     category: "Fish",
+    subcategory: "Ocean Fish",
     description:
       "The red lionfish is a venomous coral reef fish native to the Indo-Pacific. It is known for its striking appearance — red, white, and black stripes with long, venomous spines. It has become a highly invasive species in the Atlantic Ocean and Caribbean, where it has no natural predators and is devastating native fish populations.",
     habitat: "Coral reefs, rocky crevices, and lagoons of the Indo-Pacific; invasive in the Atlantic",
@@ -1877,6 +2071,7 @@ export const animals: Animal[] = [
     name: "Electric Eel",
     scientificName: "Electrophorus electricus",
     category: "Fish",
+    subcategory: "Ocean Fish",
     description:
       "The electric eel is not a true eel but a knifefish. It is capable of generating electric shocks of up to 860 volts — the most powerful of any known animal. It uses electricity for navigation, communication, and to stun prey. Despite its name, it is more closely related to catfish than to true eels.",
     habitat: "Freshwater rivers and streams of the Amazon and Orinoco basins",
@@ -1905,6 +2100,7 @@ export const animals: Animal[] = [
     name: "Lined Seahorse",
     scientificName: "Hippocampus erectus",
     category: "Fish",
+    subcategory: "Ocean Fish",
     description:
       "Seahorses are unique fish that swim upright and are the only animals where the male carries and gives birth to the young. They are poor swimmers and anchor themselves to coral and seagrass with their prehensile tails. They can change colour to camouflage themselves and communicate with their partners.",
     habitat: "Shallow tropical and temperate coastal waters worldwide",
@@ -1934,6 +2130,7 @@ export const animals: Animal[] = [
     name: "Red-bellied Piranha",
     scientificName: "Pygocentrus nattereri",
     category: "Fish",
+    subcategory: "Ocean Fish",
     description:
       "The red-bellied piranha is the most famous and feared piranha species. Despite their fearsome reputation, they are primarily scavengers and rarely attack large animals. They are highly social fish that live in schools for protection. Their razor-sharp, interlocking teeth can strip flesh from bone in minutes.",
     habitat: "Freshwater rivers, lakes, and floodplains of South America",
@@ -1963,6 +2160,7 @@ export const animals: Animal[] = [
     name: "Atlantic Flying Fish",
     scientificName: "Cheilopogon melanurus",
     category: "Fish",
+    subcategory: "Ocean Fish",
     description:
       "Flying fish are remarkable for their ability to leap out of the water and glide through the air using their enlarged pectoral fins as wings. They can glide for distances of up to 400 metres at speeds of up to 70 km/h. This behaviour is used to escape predators such as dolphins and tuna.",
     habitat: "Tropical and subtropical oceans worldwide, near the surface",
@@ -1992,6 +2190,7 @@ export const animals: Animal[] = [
     name: "Deep-sea Anglerfish",
     scientificName: "Melanocetus johnsonii",
     category: "Fish",
+    subcategory: "Ocean Fish",
     description:
       "The deep-sea anglerfish is one of the most bizarre creatures in the ocean. It lives in the pitch-black depths of the ocean and uses a bioluminescent lure on its head to attract prey. The female is much larger than the male, who attaches himself permanently to the female's body in a form of parasitic mating.",
     habitat: "Deep ocean waters worldwide, typically below 200 metres",
@@ -2021,6 +2220,7 @@ export const animals: Animal[] = [
     name: "West Indian Ocean Coelacanth",
     scientificName: "Latimeria chalumnae",
     category: "Fish",
+    subcategory: "Ocean Fish",
     description:
       "The coelacanth is a living fossil — a fish that was thought to have been extinct for 65 million years until a living specimen was discovered in 1938. It is one of the oldest living species on Earth and is more closely related to lungfish and tetrapods than to most other fish. It has lobed fins that move like limbs.",
     habitat: "Deep marine caves and slopes off the coasts of eastern Africa and Indonesia",
@@ -2050,6 +2250,7 @@ export const animals: Animal[] = [
     name: "Ocean Sunfish",
     scientificName: "Mola mola",
     category: "Fish",
+    subcategory: "Ocean Fish",
     description:
       "The ocean sunfish, or mola mola, is the world's heaviest bony fish, weighing up to 2,300 kg. It has a distinctive truncated body and is often seen basking on its side at the ocean surface. Despite its enormous size, it feeds primarily on jellyfish. It produces more eggs than any other vertebrate — up to 300 million at a time.",
     habitat: "Tropical and temperate oceans worldwide",
@@ -2079,6 +2280,7 @@ export const animals: Animal[] = [
     name: "Banded Archerfish",
     scientificName: "Toxotes jaculatrix",
     category: "Fish",
+    subcategory: "Ocean Fish",
     description:
       "The banded archerfish is famous for its remarkable ability to shoot jets of water from its mouth to knock insects and other prey off overhanging vegetation. It can accurately hit targets up to 3 metres away and accounts for the refraction of light at the water surface when aiming.",
     habitat: "Mangrove estuaries, brackish coastal waters, and freshwater streams of Southeast Asia and Australia",
@@ -2108,6 +2310,7 @@ export const animals: Animal[] = [
     name: "Great Hammerhead Shark",
     scientificName: "Sphyrna mokarran",
     category: "Fish",
+    subcategory: "Ocean Fish",
     description:
       "The great hammerhead is the largest of the nine hammerhead shark species. Its distinctive hammer-shaped head, called a cephalofoil, provides enhanced sensory capabilities — it can detect the electrical fields of prey buried in sand. They are solitary hunters and are considered dangerous to humans.",
     habitat: "Coastal and offshore tropical and warm temperate waters worldwide",
@@ -2137,6 +2340,7 @@ export const animals: Animal[] = [
     name: "Porcupine Pufferfish",
     scientificName: "Diodon hystrix",
     category: "Fish",
+    subcategory: "Ocean Fish",
     description:
       "The porcupine pufferfish is one of the most recognisable fish in the ocean. When threatened, it inflates itself by swallowing water, becoming a spiky ball that is difficult for predators to swallow. It contains tetrodotoxin, one of the most potent neurotoxins known, which is concentrated in its organs.",
     habitat: "Tropical and subtropical coral reefs and rocky areas worldwide",
@@ -2166,6 +2370,7 @@ export const animals: Animal[] = [
     name: "Atlantic Mudskipper",
     scientificName: "Periophthalmus barbarus",
     category: "Fish",
+    subcategory: "Ocean Fish",
     description:
       "Mudskippers are amphibious fish that can breathe through their skin and spend significant time out of water. They use their pectoral fins as crutches to move on land and can even climb trees. They are found in intertidal zones and mangrove forests across Africa and Asia.",
     habitat: "Intertidal mudflats and mangrove forests of West Africa",
@@ -2195,6 +2400,7 @@ export const animals: Animal[] = [
     name: "Swordfish",
     scientificName: "Xiphias gladius",
     category: "Fish",
+    subcategory: "Ocean Fish",
     description:
       "The swordfish is a large, highly migratory predatory fish known for its long, flat bill. It is one of the fastest fish in the ocean, capable of reaching speeds of up to 97 km/h. It uses its bill to slash at prey, stunning or injuring them before eating. It is a popular sport fish and food fish worldwide.",
     habitat: "Tropical, subtropical, and temperate oceans worldwide",
@@ -2224,6 +2430,7 @@ export const animals: Animal[] = [
     name: "Peacock Mantis Shrimp",
     scientificName: "Odontodactylus scyllarus",
     category: "Fish",
+    subcategory: "Ocean Fish",
     description:
       "The peacock mantis shrimp is one of the most remarkable creatures in the ocean. It has the most complex eyes of any known animal, with 16 types of colour receptors (humans have 3). Its club-like appendages can strike with the speed of a bullet, generating cavitation bubbles that can shatter glass aquarium walls.",
     habitat: "Tropical and subtropical coral reefs of the Indo-Pacific",
@@ -2254,6 +2461,7 @@ export const animals: Animal[] = [
     name: "Komodo Dragon",
     scientificName: "Varanus komodoensis",
     category: "Reptile",
+    subcategory: "Land Reptile",
     description:
       "The Komodo dragon is the world's largest living lizard, found only on a handful of Indonesian islands. These ancient reptiles are formidable predators with serrated teeth, powerful claws, and a venomous bite that prevents blood clotting in their prey.",
     habitat: "Tropical savanna forests and grasslands on Indonesian islands",
@@ -2283,6 +2491,7 @@ export const animals: Animal[] = [
     name: "Saltwater Crocodile",
     scientificName: "Crocodylus porosus",
     category: "Reptile",
+    subcategory: "Land Reptile",
     description:
       "The saltwater crocodile is the world's largest living reptile and the largest riparian predator. It can grow up to 6 metres in length and weigh over 1,000 kg. It has the most powerful bite of any animal ever measured. Despite its name, it can survive in both saltwater and freshwater environments.",
     habitat: "Coastal areas, estuaries, rivers, and swamps of Southeast Asia and northern Australia",
@@ -2312,6 +2521,7 @@ export const animals: Animal[] = [
     name: "Green Sea Turtle",
     scientificName: "Chelonia mydas",
     category: "Reptile",
+    subcategory: "Land Reptile",
     description:
       "The green sea turtle is one of the largest sea turtles and the only herbivorous sea turtle as an adult. They are named for the greenish colour of their fat, not their shell. They are known for their remarkable navigational abilities, returning to the same beach where they were born to lay their eggs.",
     habitat: "Tropical and subtropical coastal waters worldwide; nests on sandy beaches",
@@ -2341,6 +2551,7 @@ export const animals: Animal[] = [
     name: "Panther Chameleon",
     scientificName: "Furcifer pardalis",
     category: "Reptile",
+    subcategory: "Land Reptile",
     description:
       "The panther chameleon is one of the most colourful reptiles in the world, found in Madagascar. Males display spectacular colours — red, orange, blue, and green — to communicate with rivals and attract mates. Contrary to popular belief, chameleons change colour primarily for communication, not camouflage.",
     habitat: "Tropical forests and coastal areas of Madagascar",
@@ -2368,6 +2579,7 @@ export const animals: Animal[] = [
     name: "King Cobra",
     scientificName: "Ophiophagus hannah",
     category: "Reptile",
+    subcategory: "Land Reptile",
     description:
       "The king cobra is the world's longest venomous snake, capable of reaching lengths of up to 5.5 metres. It is the only snake known to build a nest for its eggs. Despite its fearsome reputation, it is generally shy and avoids confrontation with humans. Its venom is powerful enough to kill an elephant.",
     habitat: "Forests, bamboo thickets, and mangrove swamps of South and Southeast Asia",
@@ -2397,6 +2609,7 @@ export const animals: Animal[] = [
     name: "Galápagos Giant Tortoise",
     scientificName: "Chelonoidis niger",
     category: "Reptile",
+    subcategory: "Land Reptile",
     description:
       "The Galápagos giant tortoise is the world's largest living tortoise and one of the longest-lived vertebrates. They can live for over 150 years. They played a key role in Charles Darwin's development of the theory of evolution. Different island populations have evolved distinct shell shapes adapted to their environments.",
     habitat: "Volcanic islands of the Galápagos Archipelago, Ecuador",
@@ -2424,6 +2637,7 @@ export const animals: Animal[] = [
     name: "Black Mamba",
     scientificName: "Dendroaspis polylepis",
     category: "Reptile",
+    subcategory: "Land Reptile",
     description:
       "The black mamba is the fastest and one of the most venomous snakes in the world. Despite its name, it is not black — it is grey or olive-brown. The name comes from the black interior of its mouth, which it displays when threatened. It can move at speeds of up to 20 km/h and its venom can kill a human in 20 minutes.",
     habitat: "Savannas, rocky hills, and open woodlands of sub-Saharan Africa",
@@ -2453,6 +2667,7 @@ export const animals: Animal[] = [
     name: "Thorny Devil",
     scientificName: "Moloch horridus",
     category: "Reptile",
+    subcategory: "Land Reptile",
     description:
       "The thorny devil is a small Australian lizard covered in conical spines. It has a false head on the back of its neck, which it presents to predators when threatened. It collects water through its skin — moisture from dew or rain is channelled through microscopic grooves between its scales directly to its mouth.",
     habitat: "Arid scrublands and deserts of central and western Australia",
@@ -2482,6 +2697,7 @@ export const animals: Animal[] = [
     name: "Flying Dragon",
     scientificName: "Draco volans",
     category: "Reptile",
+    subcategory: "Land Reptile",
     description:
       "The flying dragon is a small lizard from Southeast Asia that can glide between trees using elongated ribs covered with skin. It can glide up to 9 metres between trees. Males have brightly coloured throat fans (dewlaps) used for territorial displays and attracting females.",
     habitat: "Tropical forests of Southeast Asia",
@@ -2511,6 +2727,7 @@ export const animals: Animal[] = [
     name: "Nile Crocodile",
     scientificName: "Crocodylus niloticus",
     category: "Reptile",
+    subcategory: "Land Reptile",
     description:
       "The Nile crocodile is the largest freshwater predator in Africa and the second-largest reptile in the world. It is responsible for hundreds of human deaths each year. Despite their fearsome reputation, Nile crocodiles are attentive parents, carrying their young in their mouths to protect them.",
     habitat: "Rivers, lakes, and marshes of sub-Saharan Africa and the Nile basin",
@@ -2540,6 +2757,7 @@ export const animals: Animal[] = [
     name: "Gila Monster",
     scientificName: "Heloderma suspectum",
     category: "Reptile",
+    subcategory: "Land Reptile",
     description:
       "The Gila monster is one of only two venomous lizards native to North America. Unlike venomous snakes, it delivers venom by chewing rather than injecting. It is a slow-moving lizard that stores fat in its tail and can survive for months without eating. Its venom has led to the development of a diabetes medication.",
     habitat: "Desert and semi-arid regions of the southwestern USA and northwestern Mexico",
@@ -2569,6 +2787,7 @@ export const animals: Animal[] = [
     name: "Marine Iguana",
     scientificName: "Amblyrhynchus cristatus",
     category: "Reptile",
+    subcategory: "Land Reptile",
     description:
       "The marine iguana is the world's only seagoing lizard and is found only on the Galápagos Islands. It dives into the cold Pacific Ocean to feed on algae, sometimes reaching depths of 12 metres. To warm up after diving, it basks in the sun and sneezes out excess salt through specialised nasal glands.",
     habitat: "Rocky shores and coastal waters of the Galápagos Islands",
@@ -2597,6 +2816,7 @@ export const animals: Animal[] = [
     name: "Poison Dart Frog",
     scientificName: "Dendrobatidae",
     category: "Amphibian",
+    subcategory: "Land Amphibian",
     description:
       "Poison dart frogs are among the most brightly coloured and toxic animals on Earth. Their vivid colours serve as a warning to predators. Indigenous peoples of Central and South America have long used their toxins to poison the tips of blowgun darts.",
     habitat: "Tropical rainforests of Central and South America",
@@ -2627,6 +2847,7 @@ export const animals: Animal[] = [
     name: "Axolotl",
     scientificName: "Ambystoma mexicanum",
     category: "Amphibian",
+    subcategory: "Land Amphibian",
     description:
       "The axolotl is a remarkable salamander that retains its larval features throughout its life — a phenomenon called neoteny. It is famous for its extraordinary regenerative abilities, capable of regrowing entire limbs, parts of its heart, and even portions of its brain. It is critically endangered in the wild, found only in Lake Xochimilco near Mexico City.",
     habitat: "Lake Xochimilco and surrounding canals near Mexico City, Mexico",
@@ -2654,6 +2875,7 @@ export const animals: Animal[] = [
     name: "Chinese Giant Salamander",
     scientificName: "Andrias davidianus",
     category: "Amphibian",
+    subcategory: "Land Amphibian",
     description:
       "The Chinese giant salamander is the world's largest amphibian, reaching lengths of up to 1.8 metres. It is a living fossil, largely unchanged for 170 million years. It is critically endangered due to habitat loss and overhunting for food and traditional medicine. It breathes primarily through its skin.",
     habitat: "Cold, fast-flowing mountain streams and rivers of central, southwestern, and southern China",
@@ -2682,6 +2904,7 @@ export const animals: Animal[] = [
     name: "Red-eyed Tree Frog",
     scientificName: "Agalychnis callidryas",
     category: "Amphibian",
+    subcategory: "Land Amphibian",
     description:
       "The red-eyed tree frog is one of the most iconic and recognisable amphibians in the world. Its vivid green body, blue and yellow striped sides, and striking red eyes make it a symbol of tropical rainforests. The red eyes are thought to startle predators, giving the frog a chance to escape.",
     habitat: "Tropical rainforests of Central America, from Mexico to Panama",
@@ -2711,6 +2934,7 @@ export const animals: Animal[] = [
     name: "Fire Salamander",
     scientificName: "Salamandra salamandra",
     category: "Amphibian",
+    subcategory: "Land Amphibian",
     description:
       "The fire salamander is one of the most striking amphibians in Europe, with its bold black and yellow pattern warning predators of its toxicity. It secretes a potent neurotoxin called samandarin from glands in its skin. Despite its name, it is not associated with fire — the name may come from its habit of hiding in logs that were brought indoors.",
     habitat: "Deciduous forests near streams and ponds in Europe and western Asia",
@@ -2740,6 +2964,7 @@ export const animals: Animal[] = [
     name: "Ringed Caecilian",
     scientificName: "Siphonops annulatus",
     category: "Amphibian",
+    subcategory: "Land Amphibian",
     description:
       "Caecilians are limbless, worm-like amphibians that are among the least-known vertebrates on Earth. They spend most of their lives underground or in water. The ringed caecilian is notable for its unique parenting behaviour — the young feed on the mother's skin, which she regenerates.",
     habitat: "Tropical forests and soils of South America",
@@ -2768,6 +2993,7 @@ export const animals: Animal[] = [
     name: "Goliath Frog",
     scientificName: "Conraua goliath",
     category: "Amphibian",
+    subcategory: "Land Amphibian",
     description:
       "The goliath frog is the world's largest frog, capable of reaching lengths of 32 cm and weighing up to 3.3 kg. It is found only in a small area of Cameroon and Equatorial Guinea. Despite its size, it is a secretive animal that is rarely seen. It is endangered due to habitat loss and hunting for food.",
     habitat: "Fast-flowing rivers and streams in the rainforests of Cameroon and Equatorial Guinea",
@@ -2796,6 +3022,7 @@ export const animals: Animal[] = [
     name: "Olm",
     scientificName: "Proteus anguinus",
     category: "Amphibian",
+    subcategory: "Land Amphibian",
     description:
       "The olm is a blind, cave-dwelling salamander found in the underground waters of the Dinaric Alps in Europe. It is the only cave-dwelling chordate in Europe. It can live for over 100 years and can go without food for up to 10 years. It has no eyes and navigates using electroreception and chemoreception.",
     habitat: "Underground cave systems and subterranean rivers of the Dinaric Alps",
@@ -2825,6 +3052,7 @@ export const animals: Animal[] = [
     name: "Surinam Toad",
     scientificName: "Pipa pipa",
     category: "Amphibian",
+    subcategory: "Land Amphibian",
     description:
       "The Surinam toad is one of the most unusual amphibians in the world. It is completely flat and looks like a dead leaf. Its most remarkable feature is its reproductive strategy — eggs are embedded in the mother's back, where they develop through the tadpole stage and emerge as fully formed toadlets.",
     habitat: "Slow-moving rivers, ponds, and swamps of the Amazon and Orinoco basins",
@@ -2854,6 +3082,7 @@ export const animals: Animal[] = [
     name: "Hellbender",
     scientificName: "Cryptobranchus alleganiensis",
     category: "Amphibian",
+    subcategory: "Land Amphibian",
     description:
       "The hellbender is the largest salamander in North America, reaching lengths of up to 74 cm. It is a fully aquatic salamander that breathes primarily through its wrinkled skin. It is a living fossil, largely unchanged for millions of years. It is critically endangered due to habitat degradation and disease.",
     habitat: "Clear, fast-flowing streams and rivers of the eastern USA",
@@ -2883,6 +3112,7 @@ export const animals: Animal[] = [
     name: "Woolly Mammoth",
     scientificName: "Mammuthus primigenius",
     category: "Extinct Animal",
+    subcategory: "Prehistoric",
     description:
       "The woolly mammoth was a massive, shaggy-haired relative of today's elephants that roamed the cold tundras of the Northern Hemisphere during the last Ice Age. They went extinct around 4,000 years ago, likely due to a combination of climate change and human hunting.",
     habitat: "Cold tundra and grasslands (mammoth steppe) across Eurasia and North America",
@@ -2913,6 +3143,7 @@ export const animals: Animal[] = [
     name: "Dodo",
     scientificName: "Raphus cucullatus",
     category: "Extinct Animal",
+    subcategory: "Prehistoric",
     description:
       "The dodo was a flightless bird endemic to the island of Mauritius. Having evolved in isolation with no natural predators, it lost the ability to fly and had no fear of humans. After Dutch sailors arrived in 1598, the dodo was hunted to extinction within less than a century.",
     habitat: "Forests of Mauritius island in the Indian Ocean",
@@ -2940,6 +3171,7 @@ export const animals: Animal[] = [
     name: "Saber-Toothed Cat",
     scientificName: "Smilodon fatalis",
     category: "Extinct Animal",
+    subcategory: "Prehistoric",
     description:
       "Smilodon, commonly known as the saber-toothed cat, was one of the most iconic predators of the Pleistocene epoch. Its enormous canine teeth — up to 28 cm long — were used to deliver killing bites to large prey. It went extinct around 10,000 years ago.",
     habitat: "Grasslands, shrublands, and forests of North and South America",
@@ -2969,6 +3201,7 @@ export const animals: Animal[] = [
     name: "Thylacine (Tasmanian Tiger)",
     scientificName: "Thylacinus cynocephalus",
     category: "Extinct Animal",
+    subcategory: "Prehistoric",
     description:
       "The thylacine, also known as the Tasmanian tiger or Tasmanian wolf, was the largest known carnivorous marsupial of modern times. It had distinctive dark stripes across its back and a stiff, dog-like tail. The last known individual died in captivity in 1936. Efforts are underway to de-extinct the species using preserved DNA.",
     habitat: "Open forests, grasslands, and wetlands of Tasmania and mainland Australia",
@@ -2997,6 +3230,7 @@ export const animals: Animal[] = [
     name: "Passenger Pigeon",
     scientificName: "Ectopistes migratorius",
     category: "Extinct Animal",
+    subcategory: "Prehistoric",
     description:
       "The passenger pigeon was once the most abundant bird in North America, with flocks numbering in the billions that could darken the sky for days. It was hunted to extinction in the early 20th century. The last individual, a female named Martha, died at the Cincinnati Zoo on September 1, 1914.",
     habitat: "Deciduous forests of eastern North America",
@@ -3025,6 +3259,7 @@ export const animals: Animal[] = [
     name: "Irish Elk",
     scientificName: "Megaloceros giganteus",
     category: "Extinct Animal",
+    subcategory: "Prehistoric",
     description:
       "The Irish elk was the largest deer that ever lived, with antlers spanning up to 3.7 metres from tip to tip. Despite its name, it was not exclusively Irish and was found across Eurasia and North Africa. It went extinct around 7,700 years ago, likely due to a combination of climate change and hunting.",
     habitat: "Open grasslands and forests of Eurasia and North Africa",
@@ -3054,6 +3289,7 @@ export const animals: Animal[] = [
     name: "Quagga",
     scientificName: "Equus quagga quagga",
     category: "Extinct Animal",
+    subcategory: "Prehistoric",
     description:
       "The quagga was a subspecies of plains zebra that was once found in great numbers in South Africa. It was distinguished by having stripes only on the front part of its body, fading to a plain brown on the hindquarters. It was hunted to extinction in the wild by the 1870s, with the last captive individual dying in 1883.",
     habitat: "Karoo and Highveld regions of South Africa",
@@ -3081,6 +3317,7 @@ export const animals: Animal[] = [
     name: "Steller's Sea Cow",
     scientificName: "Hydrodamalis gigas",
     category: "Extinct Animal",
+    subcategory: "Prehistoric",
     description:
       "Steller's sea cow was a massive marine mammal related to manatees and dugongs. It could reach lengths of up to 9 metres and weigh up to 10 tonnes. It was discovered by Europeans in 1741 and hunted to extinction within 27 years. It was a slow-moving, docile animal that fed on kelp in the shallow waters of the Commander Islands.",
     habitat: "Shallow coastal waters around the Commander Islands in the Bering Sea",
@@ -3108,6 +3345,7 @@ export const animals: Animal[] = [
     name: "Great Auk",
     scientificName: "Pinguinus impennis",
     category: "Extinct Animal",
+    subcategory: "Prehistoric",
     description:
       "The great auk was a large, flightless seabird that was the original 'penguin' — the word 'penguin' was first applied to this bird before being transferred to the unrelated Southern Hemisphere birds. It was hunted to extinction for its feathers, oil, and meat. The last confirmed individuals were killed in 1844.",
     habitat: "Rocky islands and coastal waters of the North Atlantic",
@@ -3137,6 +3375,7 @@ export const animals: Animal[] = [
     name: "Megalodon",
     scientificName: "Otodus megalodon",
     category: "Extinct Animal",
+    subcategory: "Prehistoric",
     description:
       "Megalodon was the largest shark and one of the largest fish that ever lived. It could reach lengths of up to 18 metres and had teeth up to 18 cm long. It was the apex predator of its time, feeding on large marine mammals including whales. It went extinct approximately 3.6 million years ago.",
     habitat: "Warm, shallow coastal waters worldwide during the Miocene and Pliocene epochs",
@@ -3166,6 +3405,7 @@ export const animals: Animal[] = [
     name: "Pterodactylus",
     scientificName: "Pterodactylus antiquus",
     category: "Extinct Animal",
+    subcategory: "Prehistoric",
     description:
       "Pterodactylus was one of the first pterosaurs to be identified as a flying reptile. It lived during the Late Jurassic period, about 150 million years ago. It had a wingspan of up to 1.5 metres and a long, toothless beak. Despite popular belief, pterosaurs were not dinosaurs — they were a separate group of flying reptiles.",
     habitat: "Coastal areas and islands of what is now Europe during the Late Jurassic",
@@ -3195,6 +3435,7 @@ export const animals: Animal[] = [
     name: "Monarch Butterfly",
     scientificName: "Danaus plexippus",
     category: "Insect",
+    subcategory: "Flying Insect",
     description:
       "The monarch butterfly is one of the most recognisable and celebrated insects in the world, famous for its extraordinary annual migration of up to 4,800 kilometres. Their striking orange and black wings warn predators of their toxicity.",
     habitat: "Meadows, fields, and gardens across North America; overwinters in Mexican mountain forests",
@@ -3224,6 +3465,7 @@ export const animals: Animal[] = [
     name: "Atlas Moth",
     scientificName: "Attacus atlas",
     category: "Insect",
+    subcategory: "Flying Insect",
     description:
       "The Atlas moth is one of the largest moths in the world, with a wingspan that can reach up to 30 centimetres. Native to the tropical forests of Southeast Asia, its wing tips are patterned to resemble snake heads, deterring predators. Adult Atlas moths have no mouths and cannot eat.",
     habitat: "Tropical and subtropical forests of Southeast Asia",
@@ -3254,6 +3496,7 @@ export const animals: Animal[] = [
     name: "Goliath Beetle",
     scientificName: "Goliathus goliatus",
     category: "Insect",
+    subcategory: "Flying Insect",
     description:
       "The Goliath beetle is one of the largest and heaviest insects on Earth. Native to the tropical rainforests of Africa, these impressive beetles can weigh up to 100 grams as larvae and reach 11 centimetres in length as adults. Males have a distinctive Y-shaped horn on their heads used for fighting rival males.",
     habitat: "Tropical rainforests of equatorial Africa",
@@ -3284,6 +3527,7 @@ export const animals: Animal[] = [
     name: "Western Honeybee",
     scientificName: "Apis mellifera",
     category: "Insect",
+    subcategory: "Flying Insect",
     description:
       "The western honeybee is one of the most important insects on Earth, responsible for pollinating a third of the world's food supply. They live in highly organised colonies of up to 80,000 individuals, with a single queen, thousands of female workers, and hundreds of male drones. They communicate through a 'waggle dance' to share information about food sources.",
     habitat: "Worldwide in a variety of habitats, from forests to meadows and urban gardens",
@@ -3313,6 +3557,7 @@ export const animals: Animal[] = [
     name: "Emperor Dragonfly",
     scientificName: "Anax imperator",
     category: "Insect",
+    subcategory: "Flying Insect",
     description:
       "The emperor dragonfly is one of the largest dragonflies in Europe and one of the most powerful aerial predators in the insect world. It has a near-perfect hunting success rate of up to 95%, making it more effective than lions or sharks. It can fly in all directions, including backwards, and can reach speeds of up to 54 km/h.",
     habitat: "Ponds, lakes, rivers, and canals across Europe, Africa, and Asia",
@@ -3342,6 +3587,7 @@ export const animals: Animal[] = [
     name: "Hercules Beetle",
     scientificName: "Dynastes hercules",
     category: "Insect",
+    subcategory: "Flying Insect",
     description:
       "The Hercules beetle is the longest beetle in the world and one of the largest flying insects. Males have two enormous horns — one on the head and one on the thorax — used for fighting over females. Despite their intimidating appearance, they are harmless to humans. They are named after the Greek hero Hercules for their incredible strength.",
     habitat: "Tropical rainforests of Central and South America and the Caribbean",
@@ -3371,6 +3617,7 @@ export const animals: Animal[] = [
     name: "Chan's Megastick",
     scientificName: "Phobaeticus chani",
     category: "Insect",
+    subcategory: "Flying Insect",
     description:
       "Chan's megastick is the world's longest insect, with a body length of up to 35.7 cm and a total length including legs of up to 56.7 cm. It is a stick insect found in the rainforests of Borneo. It is a master of camouflage, resembling a twig or branch so closely that it is almost impossible to spot.",
     habitat: "Montane rainforests of Borneo, Malaysia",
@@ -3398,6 +3645,7 @@ export const animals: Animal[] = [
     name: "Bullet Ant",
     scientificName: "Paraponera clavata",
     category: "Insect",
+    subcategory: "Flying Insect",
     description:
       "The bullet ant is named for its sting, which is described as feeling like being shot by a bullet. It has the most painful sting of any insect, rated at the top of the Schmidt Pain Index. It is found in the rainforests of Central and South America. Some indigenous tribes use bullet ants in initiation rituals.",
     habitat: "Tropical rainforests of Central and South America",
@@ -3427,6 +3675,7 @@ export const animals: Animal[] = [
     name: "Common Eastern Firefly",
     scientificName: "Photinus pyralis",
     category: "Insect",
+    subcategory: "Flying Insect",
     description:
       "Fireflies, also known as lightning bugs, are beetles that produce light through a chemical reaction called bioluminescence. They use their flashing lights to attract mates. Each species has a unique flash pattern. Some species of firefly synchronise their flashes, creating spectacular light shows in forests.",
     habitat: "Meadows, forests, and wetlands of eastern North America",
@@ -3456,6 +3705,7 @@ export const animals: Animal[] = [
     name: "Giant Asian Praying Mantis",
     scientificName: "Hierodula membranacea",
     category: "Insect",
+    subcategory: "Flying Insect",
     description:
       "The praying mantis is a remarkable predatory insect named for its distinctive prayer-like posture. It is the only insect that can turn its head 180 degrees. It is an ambush predator that can catch prey as large as small birds and lizards. Females sometimes eat the male during or after mating.",
     habitat: "Tropical and subtropical forests, grasslands, and gardens of Asia",
@@ -3485,6 +3735,7 @@ export const animals: Animal[] = [
     name: "Tarantula Hawk",
     scientificName: "Pepsis grossa",
     category: "Insect",
+    subcategory: "Flying Insect",
     description:
       "The tarantula hawk is a large spider wasp that hunts tarantulas to use as food for its larvae. It has the second most painful sting of any insect, described as 'blinding, fierce, and shockingly electric'. Despite its fearsome reputation, it is not aggressive towards humans unless provoked.",
     habitat: "Deserts, grasslands, and scrublands of the Americas, Africa, India, and Southeast Asia",
@@ -3514,6 +3765,7 @@ export const animals: Animal[] = [
     name: "Luna Moth",
     scientificName: "Actias luna",
     category: "Insect",
+    subcategory: "Flying Insect",
     description:
       "The luna moth is one of the most beautiful moths in North America, with its distinctive pale green wings and long, sweeping tails. Like the Atlas moth, adult luna moths have no mouths and do not eat — they live only to reproduce. Their long tails are thought to confuse bat echolocation.",
     habitat: "Deciduous forests of eastern North America",
@@ -3551,6 +3803,7 @@ export const animals: Animal[] = [
     name: "Leafcutter Ant",
     scientificName: "Atta cephalotes",
     category: "Insect",
+    subcategory: "Flying Insect",
     description:
       "Leafcutter ants are among the most sophisticated farmers in the animal kingdom. They cut leaves and carry them back to their underground nests, not to eat them, but to cultivate a fungus that they feed to their larvae. Their colonies can contain up to 8 million individuals and their underground nests can be as large as a house.",
     habitat: "Tropical and subtropical forests and grasslands of Central and South America",
@@ -3589,6 +3842,7 @@ export const animals: Animal[] = [
     name: "Tardigrade",
     scientificName: "Milnesium tardigradum",
     category: "Microorganism",
+    subcategory: "Microscopic",
     description:
       "Tardigrades, also known as water bears or moss piglets, are near-microscopic eight-legged segmented animals. They are among the most resilient animals known, capable of surviving extreme conditions that would be quickly fatal to nearly all other known life forms, such as exposure to extreme temperatures, extreme pressures, air deprivation, radiation, and even the vacuum of outer space.",
     habitat: "Found in diverse environments including marine, freshwater, and terrestrial habitats like moss and lichen.",
@@ -3625,6 +3879,7 @@ export const animals: Animal[] = [
     name: "Paramecium",
     scientificName: "Paramecium caudatum",
     category: "Microorganism",
+    subcategory: "Microscopic",
     description: "Paramecium is a genus of unicellular ciliated protozoa, common in freshwater, brackish, and marine environments and are often very abundant in stagnant basins and ponds.",
     habitat: "Freshwater, brackish, and marine environments",
     diet: "Bacteria, algae, and yeast",
@@ -3660,6 +3915,7 @@ export const animals: Animal[] = [
     name: "Amoeba",
     scientificName: "Amoeba proteus",
     category: "Microorganism",
+    subcategory: "Microscopic",
     description: "Amoebae are unicellular organisms characterized by their ability to change shape by extending and retracting pseudopods ('false feet').",
     habitat: "Freshwater ponds, lakes, and slow-moving streams",
     diet: "Bacteria, algae, and other protists",
@@ -3695,6 +3951,7 @@ export const animals: Animal[] = [
     name: "Euglena",
     scientificName: "Euglena gracilis",
     category: "Microorganism",
+    subcategory: "Microscopic",
     description: "Euglena is a genus of single-celled flagellated microorganisms that exhibit both plant-like and animal-like characteristics.",
     habitat: "Freshwater and salt water, often in ponds with high organic matter",
     diet: "Mixotroph — photosynthesis and consuming organic matter",
@@ -3730,6 +3987,7 @@ export const animals: Animal[] = [
     name: "Cyanobacteria",
     scientificName: "Cyanobacteria",
     category: "Microorganism",
+    subcategory: "Microscopic",
     description: "Cyanobacteria, also known as blue-green algae, are a phylum of bacteria that obtain their energy through photosynthesis and are the only photosynthetic prokaryotes able to produce oxygen.",
     habitat: "Oceans, freshwater, damp soil, and even Antarctic rocks",
     diet: "Autotroph — photosynthesis",
@@ -3765,6 +4023,7 @@ export const animals: Animal[] = [
     name: "Diatom",
     scientificName: "Bacillariophyceae",
     category: "Microorganism",
+    subcategory: "Microscopic",
     description: "Diatoms are a major group of algae and are among the most common types of phytoplankton. Most diatoms are unicellular, although they can exist as colonies.",
     habitat: "Oceans, freshwater, and moist soils worldwide",
     diet: "Autotroph — photosynthesis",
