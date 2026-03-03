@@ -27,8 +27,8 @@ export interface Animal {
     name: string;
     lat: number;
     lng: number;
-  }[];
-  mapRegion: string;
+  }[,
+      mapRegion: string;
   tags: string[];
   approved?: boolean; // for user-submitted animals
   submittedBy?: string;
@@ -37,40 +37,41 @@ export interface Animal {
 export const animals: Animal[] = [
   // ─── MAMMALS ───────────────────────────────────────────────────────────────
   {
-      "id": "owl",
-      "name": "Great Horned Owl",
-      "scientificName": "Bubo virginianus",
-      "category": "Bird",
-      "subcategory": "Flying Bird",
-      "description": "A large, powerful owl native to the Americas, known for its tufts of feathers that look like 'horns'.",
-      "habitat": "Forests, deserts, and urban areas",
-      "diet": "Carnivore — small mammals and birds",
-      "lifespan": "15-20 years",
-      "weight": "0.9-2.5 kg",
-      "length": "43-64 cm",
-      "conservationStatus": "Least Concern",
-      "taxonomy: {
+      id: "owl",
+      name: "Great Horned Owl",
+      scientificName: "Bubo virginianus",
+      category: "Bird",
+      subcategory: "Flying Bird",
+      description: "A large, powerful owl native to the Americas, known for its tufts of feathers that look like 'horns'.",
+      habitat: "Forests, deserts, and urban areas",
+      diet: "Carnivore — small mammals and birds",
+      lifespan: "15-20 years",
+      weight: "0.9-2.5 kg",
+      length: "43-64 cm",
+      conservationStatus: "Least Concern",
+      taxonomy: {
           kingdom: "Animalia",
           phylum: "Chordata",
           class: "Aves",
           order: "Strigiformes",
           family: "Strigidae",
           genus: "Bubo",
-        },imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Great_Horned_Owl_Bubo_virginianus_at_the_Arizona-Sonora_Desert_Museum.jpg/1280px-Great_Horned_Owl_Bubo_virginianus_at_the_Arizona-Sonora_Desert_Museum.jpg",
-      "videoId": "Wr_Ev0Oe5Ck",
-      "funFacts": [
+        },
+      imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Great_Horned_Owl_Bubo_virginianus_at_the_Arizona-Sonora_Desert_Museum.jpg/1280px-Great_Horned_Owl_Bubo_virginianus_at_the_Arizona-Sonora_Desert_Museum.jpg",
+      videoId: "Wr_Ev0Oe5Ck",
+      funFacts: [
         "They have exceptional night vision.",
         "They can rotate their heads 270 degrees."
       ],
-      "locations": [
+      locations: [
         {
-          "name": "North America",
-          "lat": 40,
-          "lng": -100
+          name: "North America",
+          lat: 40,
+          lng: -100
         }
       ],
-      "mapRegion": "Americas",
-      "tags": [
+      mapRegion: "Americas",
+      tags: [
         "bird",
         "owl",
         "night"
@@ -78,88 +79,90 @@ export const animals: Animal[] = [
     },
     
       ],
-      "mapRegion": "Americas",
-      "tags": [
+      mapRegion: "Americas",
+      tags: [
         "bird",
         "parrot",
         "colorful"
       ]
     },
     {
-      "id": "kingfisher",
-      "name": "Common Kingfisher",
-      "scientificName": "Alcedo atthis",
-      "category": "Bird",
-      "subcategory": "Flying Bird",
-      "description": "A small, brightly coloured bird known for its spectacular diving to catch fish.",
-      "habitat": "Near rivers, lakes, and streams",
-      "diet": "Carnivore — primarily fish",
-      "lifespan": "7-10 years",
-      "weight": "34-46 g",
-      "length": "16-17 cm",
-      "conservationStatus": "Least Concern",
-      "taxonomy: {
+      id: "kingfisher",
+      name: "Common Kingfisher",
+      scientificName: "Alcedo atthis",
+      category: "Bird",
+      subcategory: "Flying Bird",
+      description: "A small, brightly coloured bird known for its spectacular diving to catch fish.",
+      habitat: "Near rivers, lakes, and streams",
+      diet: "Carnivore — primarily fish",
+      lifespan: "7-10 years",
+      weight: "34-46 g",
+      length: "16-17 cm",
+      conservationStatus: "Least Concern",
+      taxonomy: {
           kingdom: "Animalia",
           phylum: "Chordata",
           class: "Aves",
           order: "Coraciiformes",
           family: "Alcedinidae",
           genus: "Alcedo",
-        },imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Common_Kingfisher_Alcedo_atthis.jpg/1280px-Common_Kingfisher_Alcedo_atthis.jpg",
-      "videoId": "Wr_Ev0Oe5Ck",
-      "funFacts": [
+        },
+      imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Common_Kingfisher_Alcedo_atthis.jpg/1280px-Common_Kingfisher_Alcedo_atthis.jpg",
+      videoId: "Wr_Ev0Oe5Ck",
+      funFacts: [
         "They can see under water.",
         "They are very territorial."
       ],
-      "locations": [
+      locations: [
         {
-          "name": "Europe & Asia",
-          "lat": 50,
-          "lng": 10
+          name: "Europe & Asia",
+          lat: 50,
+          lng: 10
         }
       ],
-      "mapRegion": "Eurasia",
-      "tags": [
+      mapRegion: "Eurasia",
+      tags: [
         "bird",
         "colorful",
         "fisher"
       ]
     },
     {
-      "id": "woodpecker",
-      "name": "Great Spotted Woodpecker",
-      "scientificName": "Dendrocopos major",
-      "category": "Bird",
-      "subcategory": "Flying Bird",
-      "description": "A medium-sized woodpecker with black and white plumage and a red patch on the lower belly.",
-      "habitat": "Woodlands and gardens",
-      "diet": "Omnivore — insects, seeds, and nuts",
-      "lifespan": "10-15 years",
-      "weight": "70-90 g",
-      "length": "20-24 cm",
-      "conservationStatus": "Least Concern",
-      "taxonomy: {
+      id: "woodpecker",
+      name: "Great Spotted Woodpecker",
+      scientificName: "Dendrocopos major",
+      category: "Bird",
+      subcategory: "Flying Bird",
+      description: "A medium-sized woodpecker with black and white plumage and a red patch on the lower belly.",
+      habitat: "Woodlands and gardens",
+      diet: "Omnivore — insects, seeds, and nuts",
+      lifespan: "10-15 years",
+      weight: "70-90 g",
+      length: "20-24 cm",
+      conservationStatus: "Least Concern",
+      taxonomy: {
           kingdom: "Animalia",
           phylum: "Chordata",
           class: "Aves",
           order: "Piciformes",
           family: "Picidae",
           genus: "Dendrocopos",
-        },imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Great_Spotted_Woodpecker_Dendrocopos_major.jpg/1280px-Great_Spotted_Woodpecker_Dendrocopos_major.jpg",
-      "videoId": "Wr_Ev0Oe5Ck",
-      "funFacts": [
+        },
+      imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Great_Spotted_Woodpecker_Dendrocopos_major.jpg/1280px-Great_Spotted_Woodpecker_Dendrocopos_major.jpg",
+      videoId: "Wr_Ev0Oe5Ck",
+      funFacts: [
         "They drum on trees to communicate.",
         "They have extremely long tongues."
       ],
-      "locations": [
+      locations: [
         {
-          "name": "Europe & North Africa",
-          "lat": 45,
-          "lng": 5
+          name: "Europe & North Africa",
+          lat: 45,
+          lng: 5
         }
       ],
-      "mapRegion": "Eurasia",
-      "tags": [
+      mapRegion: "Eurasia",
+      tags: [
         "bird",
         "woodland",
         "drummer"
@@ -538,7 +541,7 @@ export const animals: Animal[] = [
     length: "1.2–1.8 m",
     behavior: "Social and gentle. They live in family groups led by a dominant silverback and communicate through complex vocalizations.",
     taxonomy: {
-      kingdom: "Animalia",
+          kingdom: "Animalia",
       phylum: "Chordata",
       class: "Mammalia",
       order: "Primates",
@@ -617,7 +620,7 @@ export const animals: Animal[] = [
     length: "1.2–1.4 m",
     behavior: "Solitary and arboreal. They are highly intelligent, use tools, and mothers have very long-term bonds with their offspring.",
     taxonomy: {
-      kingdom: "Animalia",
+          kingdom: "Animalia",
       phylum: "Chordata",
       class: "Mammalia",
       order: "Primates",
@@ -694,14 +697,14 @@ export const animals: Animal[] = [
     length: "3.9–5.5 m (excluding tusk)",
     behavior: "Social and migratory. They use their tusks for sensory perception and engage in deep diving to find food.",
     taxonomy: {
-      kingdom: "Animalia",
+          kingdom: "Animalia",
       phylum: "Chordata",
       class: "Mammalia",
       order: "Artiodactyla",
       family: "Monodontidae",
       genus: "Monodon",
     },taxonomy: {
-        kingdom: "Animalia",
+          kingdom: "Animalia",
         phylum: "Chordata",
         class: "Mammalia",
         order: "Artiodactyla",
@@ -740,7 +743,7 @@ export const animals: Animal[] = [
     length: "1.1–1.9 m",
     behavior: "Solitary apex predators. They are excellent swimmers and have a unique killing method by biting through the skull.",
     taxonomy: {
-      kingdom: "Animalia",
+          kingdom: "Animalia",
       phylum: "Chordata",
       class: "Mammalia",
       order: "Carnivora",
@@ -1003,7 +1006,7 @@ export const animals: Animal[] = [
     lifespan: "50–80 years (females), 30–60 years (males)",
     weight: "3,600–5,400 kg",
     length: "5.5–8 m",taxonomy: {
-        kingdom: "Animalia",
+          kingdom: "Animalia",
         phylum: "Chordata",
         class: "Mammalia",
         order: "Artiodactyla",
@@ -1160,7 +1163,7 @@ export const animals: Animal[] = [
     lifespan: "40–60 years",
     weight: "150–650 kg",
     length: "2–4 m",taxonomy: {
-        kingdom: "Animalia",
+          kingdom: "Animalia",
         phylum: "Chordata",
         class: "Mammalia",
         order: "Artiodactyla",
@@ -1373,7 +1376,7 @@ export const animals: Animal[] = [
     tags: ["mammal", "asia", "endangered", "scales"],
   },
   // ─── BIRDS ─────────────────────────────────────────────────────────────────
-  {
+    {
       id: "macaw",
       name: "Scarlet Macaw",
       scientificName: "Ara macao",
@@ -1386,7 +1389,7 @@ export const animals: Animal[] = [
       weight: "0.9–1.1 kg",
       length: "81–96 cm (including tail)",
       taxonomy: {
-        kingdom: "Animalia",
+          kingdom: "Animalia",
         phylum: "Chordata",
         class: "Aves",
         order: "Psittaciformes",
@@ -1394,6 +1397,19 @@ export const animals: Animal[] = [
         genus: "Ara",
       },
       conservationStatus: "Least Concern",
+      imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Scarlet_Macaw_-_Ara_macao_-_at_the_Cincinnati_Zoo.jpg/1280px-Scarlet_Macaw_-_Ara_macao_-_at_the_Cincinnati_Zoo.jpg",
+      videoId: "Wr_Ev0Oe5Ck",
+      funFacts: [
+        "They mate for life.",
+        "They use their beaks to climb trees.",
+      ],
+      locations: [
+        { name: "South America", lat: -10, lng: -60 },
+      ],
+      mapRegion: "Americas",
+      tags: ["bird", "parrot", "colorful", "tropical"],
+    },
+  conservationStatus: "Least Concern",
       imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Scarlet_Macaw_Ara_macao_2_edit.jpg/1280px-Scarlet_Macaw_Ara_macao_2_edit.jpg",
       videoId: "Wr_Ev0Oe5Ck",
       funFacts: [
@@ -2508,7 +2524,7 @@ export const animals: Animal[] = [
     lifespan: "20–30 years",
     weight: "230–580 kg",
     length: "3.5–6.1 m",taxonomy: {
-        kingdom: "Animalia",
+          kingdom: "Animalia",
         phylum: "Chordata",
         class: "Chondrichthyes",
         order: "Carcharhiniformes",
@@ -4203,7 +4219,7 @@ export const animals: Animal[] = [
     length: "0.5 mm",
     behavior: "Extremophiles capable of cryptobiosis. They can survive outer space, extreme pressure, and radiation.",
     taxonomy: {
-      kingdom: "Animalia",
+          kingdom: "Animalia",
       phylum: "Tardigrada",
       class: "Eutardigrada",
       order: "Apochela",
@@ -4239,7 +4255,7 @@ export const animals: Animal[] = [
     length: "50–330 μm",
     behavior: "Moves in a spiral motion using cilia. Exhibits avoidance behavior when encountering obstacles.",
     taxonomy: {
-      kingdom: "Chromista",
+          kingdom: "Chromista",
       phylum: "Ciliophora",
       class: "Oligohymenophorea",
       order: "Peniculida",
@@ -4275,7 +4291,7 @@ export const animals: Animal[] = [
     length: "220–740 μm",
     behavior: "Moves and feeds using pseudopodia. Can form a cyst to survive harsh conditions.",
     taxonomy: {
-      kingdom: "Amoebozoa",
+          kingdom: "Amoebozoa",
       phylum: "Tubulinea",
       class: "Tubulinida",
       order: "Euamoebida",
@@ -4311,7 +4327,7 @@ export const animals: Animal[] = [
     length: "15–500 μm",
     behavior: "Phototactic (moves toward light) using a flagellum. Can switch between autotrophy and heterotrophy.",
     taxonomy: {
-      kingdom: "Excavata",
+          kingdom: "Excavata",
       phylum: "Euglenozoa",
       class: "Euglenoidea",
       order: "Euglenida",
@@ -4347,7 +4363,7 @@ export const animals: Animal[] = [
     length: "1–10 μm (per cell)",
     behavior: "Forms colonies or filaments. Capable of nitrogen fixation and oxygenic photosynthesis.",
     taxonomy: {
-      kingdom: "Bacteria",
+          kingdom: "Bacteria",
       phylum: "Cyanobacteria",
       class: "Cyanophyceae",
       order: "Nostocales",
@@ -4383,7 +4399,7 @@ export const animals: Animal[] = [
     length: "2–200 μm",
     behavior: "Photosynthetic and non-motile (mostly). They have intricate silica shells and contribute significantly to global oxygen production.",
     taxonomy: {
-      kingdom: "Chromista",
+          kingdom: "Chromista",
       phylum: "Ochrophyta",
       class: "Bacillariophyceae",
       order: "Naviculales",
@@ -4405,8 +4421,6 @@ export const animals: Animal[] = [
     mapRegion: "Global",
     tags: ["algae", "silica", "phytoplankton"],
   },
-];
-
 export const categories = ["All", "Mammal", "Bird", "Fish", "Reptile", "Amphibian", "Extinct Animal", "Insect", "Microorganism"];
 
 export const conservationColors: Record<Animal["conservationStatus"], string> = {
